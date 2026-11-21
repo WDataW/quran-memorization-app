@@ -1,0 +1,238 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="component" name="Component Diagram">
+    <mxGraphModel dx="2036" dy="1298" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2100" pageHeight="1200" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="boundary" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#666666;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=10;spacingTop=6;fontStyle=1;fontSize=14;" value="Quran Micro-Learning System" vertex="1">
+          <mxGeometry height="880" width="1720" x="300" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="dev" parent="1" style="shape=component;align=center;spacingLeft=16;whiteSpace=wrap;html=1;rounded=0;fontSize=14;fontStyle=1;fillColor=#F5F5F5;strokeColor=#666666;strokeWidth=1.5;jettyWidth=32;jettyHeight=12;" value="Device OS" vertex="1">
+          <mxGeometry height="90" width="300" x="560" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="qul" parent="1" style="shape=component;align=center;spacingLeft=16;whiteSpace=wrap;html=1;rounded=0;fontSize=14;fontStyle=1;fillColor=#F5F5F5;strokeColor=#666666;strokeWidth=1.5;jettyWidth=32;jettyHeight=12;" value="QUL" vertex="1">
+          <mxGeometry height="90" width="300" x="1100" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="email" parent="1" style="shape=component;align=center;spacingLeft=16;whiteSpace=wrap;html=1;rounded=0;fontSize=14;fontStyle=1;fillColor=#F5F5F5;strokeColor=#666666;strokeWidth=1.5;jettyWidth=32;jettyHeight=12;" value="Email Service" vertex="1">
+          <mxGeometry height="90" width="150" x="20" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="mobile" parent="1" style="shape=component;align=center;spacingLeft=16;whiteSpace=wrap;html=1;rounded=0;fontSize=14;fontStyle=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;strokeWidth=1.5;jettyWidth=32;jettyHeight=12;" value="Mobile App" vertex="1">
+          <mxGeometry height="90" width="1270" x="340" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="account" parent="1" style="shape=component;align=center;spacingLeft=16;whiteSpace=wrap;html=1;rounded=0;fontSize=14;fontStyle=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;strokeWidth=1.5;jettyWidth=32;jettyHeight=12;" value="Account" vertex="1">
+          <mxGeometry height="90" width="190" x="340" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="profile" parent="1" style="shape=component;align=center;spacingLeft=16;whiteSpace=wrap;html=1;rounded=0;fontSize=14;fontStyle=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;strokeWidth=1.5;jettyWidth=32;jettyHeight=12;" value="Profile" vertex="1">
+          <mxGeometry height="90" width="190" x="700" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="progress" parent="1" style="shape=component;align=center;spacingLeft=16;whiteSpace=wrap;html=1;rounded=0;fontSize=14;fontStyle=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;strokeWidth=1.5;jettyWidth=32;jettyHeight=12;" value="Progress" vertex="1">
+          <mxGeometry height="90" width="190" x="1060" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="learning" parent="1" style="shape=component;align=center;spacingLeft=16;whiteSpace=wrap;html=1;rounded=0;fontSize=14;fontStyle=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;strokeWidth=1.5;jettyWidth=32;jettyHeight=12;" value="Learning" vertex="1">
+          <mxGeometry height="90" width="190" x="1420" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="recit" parent="1" style="shape=component;align=center;spacingLeft=16;whiteSpace=wrap;html=1;rounded=0;fontSize=14;fontStyle=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;strokeWidth=1.5;jettyWidth=32;jettyHeight=12;" value="Recitation Evaluation" vertex="1">
+          <mxGeometry height="90" width="190" x="1780" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="db" parent="1" style="shape=component;align=center;spacingLeft=16;whiteSpace=wrap;html=1;rounded=0;fontSize=14;fontStyle=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;strokeWidth=1.5;jettyWidth=32;jettyHeight=12;" value="Database" vertex="1">
+          <mxGeometry height="90" width="1270" x="340" y="980" as="geometry" />
+        </mxCell>
+        <mxCell id="prov_session" edge="1" parent="1" source="account" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=none;exitX=1.0000;exitY=0.3000;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ball_session" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req_session" edge="1" parent="1" source="profile" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=halfCircle;endFill=0;endSize=10;exitX=0.0000;exitY=0.3000;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="ball_session" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="prov_prefs_pr" edge="1" parent="1" source="progress" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=none;exitX=0.0000;exitY=0.3000;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="ball_prefs_pr" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req_prefs_pr" edge="1" parent="1" source="profile" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=halfCircle;endFill=0;endSize=10;exitX=1.0000;exitY=0.3000;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ball_prefs_pr" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="prov_progview_lp" edge="1" parent="1" source="learning" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=none;exitX=0.0000;exitY=0.3000;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="ball_progview_lp" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req_progview_lp" edge="1" parent="1" source="progress" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=halfCircle;endFill=0;endSize=10;exitX=1.0000;exitY=0.3000;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ball_progview_lp" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="prov_recit" edge="1" parent="1" source="recit" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=none;exitX=0.0000;exitY=0.3000;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="ball_recit" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req_recit" edge="1" parent="1" source="learning" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=halfCircle;endFill=0;endSize=10;exitX=1.0000;exitY=0.3000;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ball_recit" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="prov_email" edge="1" parent="1" source="email" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=none;exitX=1.0000;exitY=0.3000;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ball_email" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req_email" edge="1" parent="1" source="account" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=halfCircle;endFill=0;endSize=10;exitX=0.0000;exitY=0.3000;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="ball_email" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="prov_m_acc" edge="1" parent="1" source="account" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=none;exitX=0.1579;exitY=0.0000;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="ball_m_acc" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req_m_acc" edge="1" parent="1" source="mobile" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=halfCircle;endFill=0;endSize=10;exitX=0.0236;exitY=1.0000;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ball_m_acc" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="prov_m_prof" edge="1" parent="1" source="profile" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=none;exitX=0.5000;exitY=0.0000;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="ball_m_prof" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req_m_prof" edge="1" parent="1" source="mobile" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=halfCircle;endFill=0;endSize=10;exitX=0.3583;exitY=1.0000;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ball_m_prof" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="prov_m_pview" edge="1" parent="1" source="progress" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=none;exitX=0.7368;exitY=0.0000;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="ball_m_pview" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req_m_pview" edge="1" parent="1" source="mobile" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=halfCircle;endFill=0;endSize=10;exitX=0.6772;exitY=1.0000;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ball_m_pview" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="prov_m_learn" edge="1" parent="1" source="learning" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=none;exitX=0.7368;exitY=0.0000;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="ball_m_learn" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req_m_learn" edge="1" parent="1" source="mobile" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=halfCircle;endFill=0;endSize=10;exitX=0.9606;exitY=1.0000;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ball_m_learn" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="prov_d_acc" edge="1" parent="1" source="db" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=none;exitX=0.0748;exitY=0.0000;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="ball_d_acc" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req_d_acc" edge="1" parent="1" source="account" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=halfCircle;endFill=0;endSize=10;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ball_d_acc" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="prov_d_prof" edge="1" parent="1" source="db" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=none;exitX=0.3150;exitY=0.0000;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="ball_d_prof" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req_d_prof" edge="1" parent="1" source="profile" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=halfCircle;endFill=0;endSize=10;exitX=0.2105;exitY=1.0000;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ball_d_prof" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="prov_d_prog" edge="1" parent="1" source="db" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=none;exitX=0.6417;exitY=0.0000;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="ball_d_prog" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req_d_prog" edge="1" parent="1" source="progress" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=halfCircle;endFill=0;endSize=10;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ball_d_prog" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="prov_d_learn" edge="1" parent="1" source="db" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=none;exitX=0.9606;exitY=0.0000;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="ball_d_learn" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req_d_learn" edge="1" parent="1" source="learning" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=halfCircle;endFill=0;endSize=10;exitX=0.7368;exitY=1.0000;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ball_d_learn" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="prov_dev_not" edge="1" parent="1" source="dev" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=none;exitX=0.2667;exitY=1.0000;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ball_dev_not" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req_dev_not" edge="1" parent="1" source="mobile" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=halfCircle;endFill=0;endSize=10;exitX=0.2362;exitY=0.0000;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="ball_dev_not" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="prov_dev_mic" edge="1" parent="1" source="dev" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=none;exitX=0.7333;exitY=1.0000;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ball_dev_mic" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req_dev_mic" edge="1" parent="1" source="mobile" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=halfCircle;endFill=0;endSize=10;exitX=0.3465;exitY=0.0000;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="ball_dev_mic" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="prov_qul_audio" edge="1" parent="1" source="qul" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=none;exitX=0.5000;exitY=1.0000;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="ball_qul_audio" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="req_qul_audio" edge="1" parent="1" source="mobile" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=halfCircle;endFill=0;endSize=10;exitX=0.7165;exitY=0.0000;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="ball_qul_audio" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="prov_id_learn" edge="1" parent="1" source="account" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=none;exitX=0.4737;exitY=0.0000;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ball_id_learn" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="430" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="req_id_learn" edge="1" parent="1" source="learning" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=halfCircle;endFill=0;endSize=10;exitX=0.2105;exitY=0.0000;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="ball_id_learn" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1460" y="500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="prov_id_prog" edge="1" parent="1" source="account" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=none;exitX=0.7895;exitY=0.0000;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ball_id_prog" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="req_id_prog" edge="1" parent="1" source="progress" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=halfCircle;endFill=0;endSize=10;exitX=0.2105;exitY=0.0000;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="ball_id_prog" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1100" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="prov_prefs_pl" edge="1" parent="1" source="profile" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=none;exitX=0.7895;exitY=1.0000;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="ball_prefs_pl" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="850" y="800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="req_prefs_pl" edge="1" parent="1" source="learning" style="html=1;rounded=0;jumpStyle=arc;jumpSize=10;strokeColor=#333333;strokeWidth=1.5;endArrow=halfCircle;endFill=0;endSize=10;exitX=0.2105;exitY=1.0000;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="ball_prefs_pl" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1460" y="800" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ball_session" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;fontSize=11;fontStyle=2;verticalLabelPosition=top;verticalAlign=bottom;labelPosition=center;align=center;spacingBottom=2;" value="ISessionCheck" vertex="1">
+          <mxGeometry height="20" width="20" x="605" y="657" as="geometry" />
+        </mxCell>
+        <mxCell id="ball_prefs_pr" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;fontSize=11;fontStyle=2;verticalLabelPosition=top;verticalAlign=bottom;labelPosition=center;align=center;spacingBottom=2;" value="ILearningPreferences" vertex="1">
+          <mxGeometry height="20" width="20" x="965" y="657" as="geometry" />
+        </mxCell>
+        <mxCell id="ball_progview_lp" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;fontSize=11;fontStyle=2;verticalLabelPosition=top;verticalAlign=bottom;labelPosition=center;align=center;spacingBottom=2;" value="IProgressView" vertex="1">
+          <mxGeometry height="20" width="20" x="1325" y="657" as="geometry" />
+        </mxCell>
+        <mxCell id="ball_recit" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;fontSize=11;fontStyle=2;verticalLabelPosition=top;verticalAlign=bottom;labelPosition=center;align=center;spacingBottom=2;" value="IRecitationEvaluation" vertex="1">
+          <mxGeometry height="20" width="20" x="1685" y="657" as="geometry" />
+        </mxCell>
+        <mxCell id="ball_email" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;fontSize=11;fontStyle=2;verticalLabelPosition=top;verticalAlign=bottom;labelPosition=center;align=center;spacingBottom=2;" value="IEmailDelivery" vertex="1">
+          <mxGeometry height="20" width="20" x="225" y="657" as="geometry" />
+        </mxCell>
+        <mxCell id="ball_m_acc" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;fontSize=11;fontStyle=2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=4;" value="IAccount" vertex="1">
+          <mxGeometry height="20" width="20" x="360" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="ball_m_prof" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;fontSize=11;fontStyle=2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=4;" value="IProfile" vertex="1">
+          <mxGeometry height="20" width="20" x="785" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="ball_m_pview" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;fontSize=11;fontStyle=2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=4;" value="IProgressView" vertex="1">
+          <mxGeometry height="20" width="20" x="1190" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="ball_m_learn" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;fontSize=11;fontStyle=2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=4;" value="ILearning" vertex="1">
+          <mxGeometry height="20" width="20" x="1550" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="ball_d_acc" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;fontSize=11;fontStyle=2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=4;" value="IDataStorage" vertex="1">
+          <mxGeometry height="20" width="20" x="425" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="ball_d_prof" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;fontSize=11;fontStyle=2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=4;" value="IDataStorage" vertex="1">
+          <mxGeometry height="20" width="20" x="730" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="ball_d_prog" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;fontSize=11;fontStyle=2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=4;" value="IDataStorage" vertex="1">
+          <mxGeometry height="20" width="20" x="1145" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="ball_d_learn" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;fontSize=11;fontStyle=2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=4;" value="IDataStorage" vertex="1">
+          <mxGeometry height="20" width="20" x="1550" y="890" as="geometry" />
+        </mxCell>
+        <mxCell id="ball_dev_not" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;fontSize=11;fontStyle=2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=4;" value="INotifications" vertex="1">
+          <mxGeometry height="20" width="20" x="630" y="195" as="geometry" />
+        </mxCell>
+        <mxCell id="ball_dev_mic" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;fontSize=11;fontStyle=2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=4;" value="IMicrophone" vertex="1">
+          <mxGeometry height="20" width="20" x="770" y="195" as="geometry" />
+        </mxCell>
+        <mxCell id="ball_qul_audio" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;fontSize=11;fontStyle=2;labelPosition=right;verticalLabelPosition=middle;align=left;verticalAlign=middle;spacingLeft=4;" value="IRecitationAudio" vertex="1">
+          <mxGeometry height="20" width="20" x="1240" y="195" as="geometry" />
+        </mxCell>
+        <mxCell id="ball_id_learn" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;fontSize=11;fontStyle=2;verticalLabelPosition=top;verticalAlign=bottom;labelPosition=center;align=center;spacingBottom=2;" value="IAccountIdentity" vertex="1">
+          <mxGeometry height="20" width="20" x="990" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="ball_id_prog" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;fontSize=11;fontStyle=2;verticalLabelPosition=top;verticalAlign=bottom;labelPosition=center;align=center;spacingBottom=2;" value="IAccountIdentity" vertex="1">
+          <mxGeometry height="20" width="20" x="940" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="ball_prefs_pl" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#333333;strokeWidth=1.5;fontSize=11;fontStyle=2;verticalLabelPosition=top;verticalAlign=bottom;labelPosition=center;align=center;spacingBottom=2;" value="ILearningPreferences" vertex="1">
+          <mxGeometry height="20" width="20" x="1320" y="790" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

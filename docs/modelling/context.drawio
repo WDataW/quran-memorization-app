@@ -1,0 +1,90 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="context" name="System Context Diagram">
+    <mxGraphModel dx="2036" dy="1298" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1440" pageHeight="820" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="User" parent="1" style="rounded=0;whiteSpace=wrap;html=0;strokeWidth=1.5;fontFamily=Arial;fontSize=19;fontStyle=1;" value="Learner (User)" vertex="1">
+          <mxGeometry height="70" width="340" x="550" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="System" parent="1" style="rounded=1;arcSize=50;whiteSpace=wrap;html=0;strokeWidth=2;fontFamily=Arial;fontSize=23;fontStyle=1;" value="Quran Micro-Learning&#xa;System" vertex="1">
+          <mxGeometry height="230" width="240" x="600" y="278" as="geometry" />
+        </mxCell>
+        <mxCell id="Email" parent="1" style="rounded=0;whiteSpace=wrap;html=0;strokeWidth=1.5;fontFamily=Arial;fontSize=19;fontStyle=1;" value="Email Service&#xa;(Resend)" vertex="1">
+          <mxGeometry height="70" width="210" x="20" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="QUL" parent="1" style="rounded=0;whiteSpace=wrap;html=0;strokeWidth=1.5;fontFamily=Arial;fontSize=19;fontStyle=1;" value="Quran Universal&#xa;Library (QUL)" vertex="1">
+          <mxGeometry height="70" width="210" x="1210" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="OS" parent="1" style="rounded=0;whiteSpace=wrap;html=0;strokeWidth=1.5;fontFamily=Arial;fontSize=19;fontStyle=1;" value="Device Operating System" vertex="1">
+          <mxGeometry height="70" width="340" x="550" y="710" as="geometry" />
+        </mxCell>
+        <mxCell id="userInput" edge="1" parent="1" source="User" style="endArrow=block;endFill=1;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.22;exitY=1;entryX=0.222;entryY=0.074;exitPerimeter=1;entryPerimeter=0;entryDx=0;entryDy=0;" target="System">
+          <mxGeometry relative="1" x="-0.0739" as="geometry">
+            <Array as="points">
+              <mxPoint x="653.3" y="100" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="userInputLabel" parent="1" style="text;html=0;whiteSpace=wrap;align=right;verticalAlign=middle;spacing=4;fontFamily=Arial;fontSize=16;" value="Account and profile details&#xa;Learning and schedule choices&#xa;Recitation and settings input" vertex="1">
+          <mxGeometry height="95" width="365" x="250" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="userOutput" edge="1" parent="1" source="System" style="endArrow=block;endFill=1;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.778;exitY=0.074;exitPerimeter=0;exitDx=0;exitDy=0;">
+          <mxGeometry relative="1" x="0.0896" as="geometry">
+            <Array as="points" />
+            <mxPoint x="787.2" y="100" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="userOutputLabel" parent="1" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=4;fontFamily=Arial;fontSize=16;" value="Account responses and Quran content&#xa;Exercise feedback and grades&#xa;Progress and notifications" vertex="1">
+          <mxGeometry height="95" width="385" x="825" y="155" as="geometry" />
+        </mxCell>
+        <mxCell id="sendEmail" edge="1" parent="1" source="System" style="endArrow=block;endFill=1;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=0.5;entryX=1;entryY=0.5;exitPerimeter=1;entryPerimeter=1;" target="Email">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="385" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="emailLabel" parent="1" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=4;fontFamily=Arial;fontSize=16;" value="Verification and&#xa;password reset email requests" vertex="1">
+          <mxGeometry height="60" width="310" x="235" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="requestAudio" edge="1" parent="1" source="System" style="endArrow=block;endFill=1;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.965;exitY=0.32;entryX=0;entryY=0.03;exitPerimeter=0;entryPerimeter=1;exitDx=0;exitDy=0;" target="QUL">
+          <mxGeometry relative="1" x="0.0004" as="geometry">
+            <Array as="points">
+              <mxPoint x="840" y="351.6" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="audioRequestLabel" parent="1" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=4;fontFamily=Arial;fontSize=16;" value="Recitation audio request" vertex="1">
+          <mxGeometry height="30" width="310" x="895" y="318" as="geometry" />
+        </mxCell>
+        <mxCell id="receiveAudio" edge="1" parent="1" source="QUL" style="endArrow=block;endFill=1;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0;exitY=0.97;entryX=0.987;entryY=0.608;exitPerimeter=1;entryPerimeter=0;entryDx=0;entryDy=0;" target="System">
+          <mxGeometry relative="1" x="0.0616" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="audioResponseLabel" parent="1" style="text;html=0;whiteSpace=wrap;align=center;verticalAlign=middle;spacing=4;fontFamily=Arial;fontSize=16;" value="Recitation audio / availability" vertex="1">
+          <mxGeometry height="30" width="310" x="895" y="425" as="geometry" />
+        </mxCell>
+        <mxCell id="osRequest" edge="1" parent="1" source="System" style="endArrow=block;endFill=1;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.22;exitY=0.921;entryX=0.303;entryY=-0.002;exitPerimeter=0;entryPerimeter=0;exitDx=0;exitDy=0;entryDx=0;entryDy=0;" target="OS">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="osRequestLabel" parent="1" style="text;html=0;whiteSpace=wrap;align=right;verticalAlign=middle;spacing=4;fontFamily=Arial;fontSize=16;" value="Microphone access request&#xa;Notification permission request&#xa;Notification scheduling / cancellation" vertex="1">
+          <mxGeometry height="95" width="375" x="240" y="535" as="geometry" />
+        </mxCell>
+        <mxCell id="osResponse" edge="1" parent="1" source="OS" style="endArrow=block;endFill=1;strokeWidth=1.5;edgeStyle=orthogonalEdgeStyle;rounded=0;exitX=0.78;exitY=0;entryX=0.78;entryY=0.925;exitPerimeter=1;entryPerimeter=0;entryDx=0;entryDy=0;" target="System">
+          <mxGeometry relative="1" x="-0.0698" as="geometry">
+            <Array as="points">
+              <mxPoint x="787.2" y="710" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="osResponseLabel" parent="1" style="text;html=0;whiteSpace=wrap;align=left;verticalAlign=middle;spacing=4;fontFamily=Arial;fontSize=16;" value="Captured audio&#xa;Permission and scheduling results" vertex="1">
+          <mxGeometry height="95" width="385" x="825" y="535" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

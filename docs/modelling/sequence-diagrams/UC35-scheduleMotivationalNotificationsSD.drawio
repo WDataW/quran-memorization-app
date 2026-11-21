@@ -1,0 +1,153 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="schedule-motivational-notifications" name="Schedule Motivational Notifications">
+    <mxGraphModel dx="1963" dy="1346" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1095" pageHeight="1080" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;shape=umlFrame;whiteSpace=wrap;fillColor=none;align=center;width=280;height=32;container=0;collapsible=0;" value="Schedule Motivational Notifications" vertex="1">
+          <mxGeometry height="980" width="1025" x="30" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;whiteSpace=wrap;fillColor=#FFFFFF;" value=":NotificationService" vertex="1">
+          <mxGeometry height="44" width="188" x="151" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;whiteSpace=wrap;fillColor=#FFFFFF;" value=":NotificationSettings" vertex="1">
+          <mxGeometry height="44" width="188" x="391" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;whiteSpace=wrap;fillColor=#FFFFFF;" value=":DeviceOperatingSystem" vertex="1">
+          <mxGeometry height="44" width="188" x="631" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="8" edge="1" parent="1" source="11" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=none;dashed=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="245" y="124" as="sourcePoint" />
+            <mxPoint x="245" y="986" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9" edge="1" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=none;dashed=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="485" y="124" as="sourcePoint" />
+            <mxPoint x="485" y="986" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10" edge="1" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=none;dashed=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="725" y="124" as="sourcePoint" />
+            <mxPoint x="725" y="986" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="12" edge="1" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=block;endFill=1;edgeStyle=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="284" y="184" />
+              <mxPoint x="284" y="210" />
+            </Array>
+            <mxPoint x="245" y="184" as="sourcePoint" />
+            <mxPoint x="252" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;whiteSpace=wrap;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="50" width="14" x="478" y="267" as="geometry" />
+        </mxCell>
+        <mxCell id="14" edge="1" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=block;endFill=1;" value="getMotivationalSettings()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="252" y="267" as="sourcePoint" />
+            <mxPoint x="478" y="267" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15" edge="1" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;" value="optionState, permissionStatus">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="478" y="317" as="sourcePoint" />
+            <mxPoint x="252" y="317" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="17" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;text;align=left;verticalAlign=middle;whiteSpace=wrap;fillColor=none;strokeColor=none;fontSize=13;" value="[motivational option is off or permission is not granted]" vertex="1">
+          <mxGeometry height="22" width="780" x="260" y="353" as="geometry" />
+        </mxCell>
+        <mxCell id="18" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;whiteSpace=wrap;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="445" width="14" x="718" y="505" as="geometry" />
+        </mxCell>
+        <mxCell id="19" edge="1" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=block;endFill=1;" value="registerDaily(Motivational, 6:00 PM device local time)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="252" y="505" as="sourcePoint" />
+            <mxPoint x="718" y="505" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="21" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;text;align=left;verticalAlign=middle;whiteSpace=wrap;fillColor=none;strokeColor=none;fontSize=13;" value="[scheduling succeeds]" vertex="1">
+          <mxGeometry height="22" width="755" x="260" y="554" as="geometry" />
+        </mxCell>
+        <mxCell id="22" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;whiteSpace=wrap;fillColor=#FFFFFF;" value=":ScheduledNotification" vertex="1">
+          <mxGeometry height="42" width="187" x="847" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="23" edge="1" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="732" y="661" as="sourcePoint" />
+            <mxPoint x="847" y="661" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="24" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;text;align=left;verticalAlign=middle;whiteSpace=wrap;fillColor=none;strokeColor=none;fontSize=13;" value="&lt;code dir=&quot;ltr&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px;&quot;&gt;createScheduledNotification()&lt;/font&gt;&lt;/code&gt;" vertex="1">
+          <mxGeometry height="24" width="84" x="740" y="610" as="geometry" />
+        </mxCell>
+        <mxCell id="25" edge="1" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=none;dashed=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="940.5" y="682" as="sourcePoint" />
+            <mxPoint x="940.5" y="986" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="26" edge="1" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=block;endFill=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="769" y="730" />
+              <mxPoint x="769" y="759" />
+            </Array>
+            <mxPoint x="732" y="730" as="sourcePoint" />
+            <mxPoint x="732" y="759" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="27" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;text;align=left;verticalAlign=middle;whiteSpace=wrap;fillColor=none;strokeColor=none;fontSize=13;" value="storeSchedule(motivationalNotification)" vertex="1">
+          <mxGeometry height="24" width="174" x="783" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="28" edge="1" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;" value="scheduleStored">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="718" y="808" as="sourcePoint" />
+            <mxPoint x="252" y="808" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="29" edge="1" parent="1" source="20" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=none;dashed=1;exitX=0.001;exitY=0.731;exitDx=0;exitDy=0;exitPerimeter=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="855" as="sourcePoint" />
+            <mxPoint x="1040" y="855" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="30" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;text;align=left;verticalAlign=middle;whiteSpace=wrap;fillColor=none;strokeColor=none;fontSize=13;" value="[scheduling fails]" vertex="1">
+          <mxGeometry height="24" width="650" x="260" y="858" as="geometry" />
+        </mxCell>
+        <mxCell id="31" edge="1" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;" value="schedulingFailed">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="718" y="943" as="sourcePoint" />
+            <mxPoint x="252" y="943" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="init-label" parent="1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;whiteSpace=wrap;fontFamily=Arial;fontSize=13;" value="scheduleMotivationalNotifications()" vertex="1">
+          <mxGeometry height="40" width="189" x="260" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="trigger-note" parent="1" style="shape=note;size=10;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontFamily=Arial;fontSize=12;spacing=5;" value="The application initiates motivational notification scheduling after enabling motivational notifications or obtaining notification permission while the option is enabled." vertex="1">
+          <mxGeometry height="115" width="188" x="42" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="JZNDMtRYBeWfi6M6sM1v-31" edge="1" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=none;dashed=1;" target="11" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="245" y="124" as="sourcePoint" />
+            <mxPoint x="245" y="986" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;whiteSpace=wrap;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="710" width="14" x="238" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="16" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;shape=umlFrame;whiteSpace=wrap;fillColor=none;align=center;width=70;height=25;" value="break" vertex="1">
+          <mxGeometry height="83" width="885" x="160" y="353" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;shape=umlFrame;whiteSpace=wrap;fillColor=none;align=center;width=70;height=25;" value="alt" vertex="1">
+          <mxGeometry height="420" width="885" x="155" y="550" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,230 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="mDvIJ1kHnn16KPji6e2w" name="Copy of Copy of Copy of Register">
+    <mxGraphModel dx="1477" dy="942" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1690" pageHeight="1605" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="diagram-frame" parent="1" style="shape=umlFrame;html=1;whiteSpace=wrap;pointerEvents=0;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=14;width=300;height=30;" value="Complete Two-Verse Recitation Exercise" vertex="1">
+          <mxGeometry height="1555" width="1640" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="user" parent="1" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;strokeColor=#000000;fontFamily=Arial;fontSize=13;" value="User" vertex="1">
+          <mxGeometry height="62" width="30" x="85" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="participant-1" parent="1" style="html=1;whiteSpace=wrap;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontFamily=Arial;fontSize=14;" value=":MemorizationLessonService" vertex="1">
+          <mxGeometry height="48" width="240" x="300" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="participant-2" parent="1" style="html=1;whiteSpace=wrap;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontFamily=Arial;fontSize=14;" value=":Verse" vertex="1">
+          <mxGeometry height="48" width="240" x="660" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="participant-3" parent="1" style="html=1;whiteSpace=wrap;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontFamily=Arial;fontSize=14;" value=":PlaybackService" vertex="1">
+          <mxGeometry height="48" width="240" x="1000" y="85" as="geometry" />
+        </mxCell>
+        <mxCell id="participant-4" parent="1" style="html=1;whiteSpace=wrap;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontFamily=Arial;fontSize=14;" value=":MistakeRecord" vertex="1">
+          <mxGeometry height="48" width="220" x="1370" y="1351" as="geometry" />
+        </mxCell>
+        <mxCell id="lifeline-0" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;startArrow=none;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="164.37" as="sourcePoint" />
+            <mxPoint x="100" y="1574.37" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lifeline-1" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;startArrow=none;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="133" as="sourcePoint" />
+            <mxPoint x="420" y="1555" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lifeline-2" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;startArrow=none;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="780" y="133" as="sourcePoint" />
+            <mxPoint x="780" y="1555" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lifeline-3" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;startArrow=none;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1120" y="133" as="sourcePoint" />
+            <mxPoint x="1120" y="1555" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lifeline-4" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;startArrow=none;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1480" y="1399" as="sourcePoint" />
+            <mxPoint x="1480" y="1555" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lesson-service-activation" parent="1" style="html=1;strokeColor=#000000;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="1335" width="12" x="414" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="current-verse-activation" parent="1" style="html=1;strokeColor=#000000;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="40" width="12" x="774" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="get-current-verse" edge="1" parent="1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" value="getCurrentVerse()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="426" y="190" as="sourcePoint" />
+            <mxPoint x="774" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="current-verse" edge="1" parent="1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=open;endFill=0;dashed=1;labelBackgroundColor=#FFFFFF;" value="currentVerse">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="774" y="230" as="sourcePoint" />
+            <mxPoint x="426" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="verse-alt" parent="1" style="shape=umlFrame;html=1;whiteSpace=wrap;pointerEvents=0;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=13;width=60;height=24;" value="alt" vertex="1">
+          <mxGeometry height="320" width="900" x="35" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="verse-alt-guard" parent="1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=13;" value="[current verse is not the first verse of the Surah]" vertex="1">
+          <mxGeometry height="22" width="820" x="105" y="261" as="geometry" />
+        </mxCell>
+        <mxCell id="previous-verse-activation" parent="1" style="html=1;strokeColor=#000000;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="45" width="12" x="774" y="315" as="geometry" />
+        </mxCell>
+        <mxCell id="get-previous-verse" edge="1" parent="1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" value="getPreviousVerse()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="426" y="315" as="sourcePoint" />
+            <mxPoint x="774" y="315" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="previous-verse" edge="1" parent="1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=open;endFill=0;dashed=1;labelBackgroundColor=#FFFFFF;" value="previousVerse">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="774" y="360" as="sourcePoint" />
+            <mxPoint x="426" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="display-both-verses" edge="1" parent="1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=open;endFill=0;labelBackgroundColor=#FFFFFF;" value="displayVerses(previousVerse, currentVerse)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="420" as="sourcePoint" />
+            <mxPoint x="100" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="verse-separator" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;startArrow=none;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="35" y="455" as="sourcePoint" />
+            <mxPoint x="935" y="455" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="verse-separator-guard" parent="1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=13;" value="[current verse is the first verse of the Surah]" vertex="1">
+          <mxGeometry height="22" width="820" x="105" y="459" as="geometry" />
+        </mxCell>
+        <mxCell id="display-current-verse" edge="1" parent="1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=open;endFill=0;labelBackgroundColor=#FFFFFF;" value="displayVerses(currentVerse)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="525" as="sourcePoint" />
+            <mxPoint x="100" y="525" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="initial-states-note" parent="1" style="shape=note;size=10;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;fontFamily=Arial;fontSize=13;align=left;spacingLeft=10;" value="&lt;b&gt;initialStates&lt;/b&gt;&lt;br&gt;Previous verse (if present): last two words concealed.&lt;br&gt;Current verse: first two words concealed.&lt;br&gt;All remaining words visible." vertex="1">
+          <mxGeometry height="112" width="440" x="1160" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="exercise-actions-loop" parent="1" style="shape=umlFrame;html=1;whiteSpace=wrap;pointerEvents=0;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=13;width=60;height=24;" value="loop" vertex="1">
+          <mxGeometry height="950" width="1600" x="35" y="600" as="geometry" />
+        </mxCell>
+        <mxCell id="exercise-actions-loop-guard" parent="1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=13;" value="[while the current exercise is open]" vertex="1">
+          <mxGeometry height="22" width="1520" x="105" y="601" as="geometry" />
+        </mxCell>
+        <mxCell id="exercise-actions-alt" parent="1" style="shape=umlFrame;html=1;whiteSpace=wrap;pointerEvents=0;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=13;width=60;height=24;" value="alt" vertex="1">
+          <mxGeometry height="885" width="1560" x="55" y="645" as="geometry" />
+        </mxCell>
+        <mxCell id="exercise-actions-alt-guard" parent="1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=13;" value="[user chooses Listen]" vertex="1">
+          <mxGeometry height="22" width="1480" x="125" y="646" as="geometry" />
+        </mxCell>
+        <mxCell id="playback-activation" parent="1" style="html=1;strokeColor=#000000;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="150" width="12" x="1114" y="700" as="geometry" />
+        </mxCell>
+        <mxCell id="start-playback" edge="1" parent="1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" value="startPlayback(scope, initialStates)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="700" as="sourcePoint" />
+            <mxPoint x="1114" y="700" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="listen-ref" parent="1" style="shape=umlFrame;html=1;whiteSpace=wrap;pointerEvents=0;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=13;width=60;height=24;" value="ref" vertex="1">
+          <mxGeometry height="75" width="1160" x="75" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="listen-ref-label" parent="1" style="text;html=1;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=13;" value="Listen to Recitation(scope, initialStates)" vertex="1">
+          <mxGeometry height="25" width="470" x="425" y="754" as="geometry" />
+        </mxCell>
+        <mxCell id="playback-finished" edge="1" parent="1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=open;endFill=0;dashed=1;labelBackgroundColor=#FFFFFF;" value="playbackFinished">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1114" y="850" as="sourcePoint" />
+            <mxPoint x="100" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="actions-separator" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;startArrow=none;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="885" as="sourcePoint" />
+            <mxPoint x="1615" y="885" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="actions-separator-guard" parent="1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=13;" value="[user chooses Recite]" vertex="1">
+          <mxGeometry height="22" width="1480" x="125" y="889" as="geometry" />
+        </mxCell>
+        <mxCell id="submit-recitation" edge="1" parent="1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" value="submitRecitation(scope)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="945" as="sourcePoint" />
+            <mxPoint x="414" y="945" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="get-words-activation" parent="1" style="html=1;strokeColor=#000000;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="35" width="12" x="774" y="1000" as="geometry" />
+        </mxCell>
+        <mxCell id="get-words" edge="1" parent="1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" value="getWords(scope)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="426" y="1000" as="sourcePoint" />
+            <mxPoint x="774" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ordered-words" edge="1" parent="1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=open;endFill=0;dashed=1;labelBackgroundColor=#FFFFFF;" value="orderedWords">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="774" y="1035" as="sourcePoint" />
+            <mxPoint x="426" y="1035" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="recite-ref" parent="1" style="shape=umlFrame;html=1;whiteSpace=wrap;pointerEvents=0;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=13;width=60;height=24;" value="ref" vertex="1">
+          <mxGeometry height="100" width="1150" x="75" y="1065" as="geometry" />
+        </mxCell>
+        <mxCell id="recite-ref-label" parent="1" style="text;html=1;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=13;" value="Recite Verses(scope, initialStates, restartAllowed = true) : wordResults" vertex="1">
+          <mxGeometry height="26" width="900" x="250" y="1090" as="geometry" />
+        </mxCell>
+        <mxCell id="recite-ref-note" parent="1" style="text;html=1;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=13;" value="Word evaluation and restart follow Recite Verses." vertex="1">
+          <mxGeometry height="22" width="900" x="250" y="1120" as="geometry" />
+        </mxCell>
+        <mxCell id="completion-opt" parent="1" style="shape=umlFrame;html=1;whiteSpace=wrap;pointerEvents=0;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=13;width=60;height=24;" value="opt" vertex="1">
+          <mxGeometry height="315" width="1535" x="75" y="1190" as="geometry" />
+        </mxCell>
+        <mxCell id="completion-opt-guard" parent="1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=13;" value="[all words have a result]" vertex="1">
+          <mxGeometry height="22" width="1440" x="145" y="1191" as="geometry" />
+        </mxCell>
+        <mxCell id="mark-exercise-completed" edge="1" parent="1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="1240" />
+              <mxPoint x="490" y="1270" />
+            </Array>
+            <mxPoint x="426" y="1240" as="sourcePoint" />
+            <mxPoint x="426" y="1270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mark-exercise-completed-label" parent="1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=13;" value="markExerciseCompleted()" vertex="1">
+          <mxGeometry height="30" width="330" x="500" y="1238" as="geometry" />
+        </mxCell>
+        <mxCell id="mistake-record-loop" parent="1" style="shape=umlFrame;html=1;whiteSpace=wrap;pointerEvents=0;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=13;width=60;height=24;" value="loop" vertex="1">
+          <mxGeometry height="120" width="1505" x="95" y="1300" as="geometry" />
+        </mxCell>
+        <mxCell id="mistake-record-loop-guard" parent="1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=13;" value="[each incorrect word in wordResults]" vertex="1">
+          <mxGeometry height="22" width="1400" x="165" y="1301" as="geometry" />
+        </mxCell>
+        <mxCell id="record-mistake" edge="1" parent="1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=open;endFill=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=#FFFFFF;" target="participant-4" value="create(surah, verse, word, date, exerciseType)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="426" y="1375" as="sourcePoint" />
+            <mxPoint x="1370" y="1375" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="exercise-completed" edge="1" parent="1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=open;endFill=0;dashed=1;labelBackgroundColor=#FFFFFF;" value="exerciseCompleted">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="1465" as="sourcePoint" />
+            <mxPoint x="100" y="1465" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

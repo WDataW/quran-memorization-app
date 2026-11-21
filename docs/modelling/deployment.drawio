@@ -1,0 +1,67 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="deployment" name="Deployment Diagram">
+    <mxGraphModel dx="2082" dy="1327" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="900" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="mobile" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=15;fillColor=#F5F5F5;strokeColor=#333333;verticalAlign=top;align=center;spacingTop=18;container=1;collapsible=0;recursiveResize=0;" value="«device»&lt;br&gt;&lt;b&gt;Mobile Device&lt;/b&gt;" vertex="1">
+          <mxGeometry height="290" width="290" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="deviceos" parent="mobile" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=12;fillColor=#FFFFFF;strokeColor=#333333;verticalAlign=top;align=center;spacingTop=14;container=1;collapsible=0;recursiveResize=0;" value="«executionEnvironment»&lt;br&gt;&lt;b&gt;Device OS&lt;/b&gt;" vertex="1">
+          <mxGeometry height="170" width="220" x="40" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="mobileapp" parent="deviceos" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#333333;" value="«artifact»&lt;br&gt;&lt;b&gt;Mobile App&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="170" x="29" y="82" as="geometry" />
+        </mxCell>
+        <mxCell id="qul" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=15;fillColor=#F5F5F5;strokeColor=#333333;verticalAlign=middle;align=center;spacingTop=10;" value="&lt;b&gt;Quran Universal Library (QUL)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="90" width="260" x="15" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="resend" parent="1" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=15;fillColor=#F5F5F5;strokeColor=#333333;verticalAlign=middle;align=center;spacingTop=10;" value="&lt;b&gt;Resend (Email Service)&lt;/b&gt;" vertex="1">
+          <mxGeometry height="75" width="220" x="515" y="65" as="geometry" />
+        </mxCell>
+        <mxCell id="region" parent="1" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;dashPattern=8 4;fillColor=none;strokeColor=#666666;strokeWidth=2;verticalAlign=top;align=left;spacingLeft=12;spacingTop=6;fontStyle=1;fontSize=14;container=1;collapsible=0;recursiveResize=0;" value="DigitalOcean Region" vertex="1">
+          <mxGeometry height="610" width="900" x="420" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="mainserver" parent="region" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=15;fillColor=#F5F5F5;strokeColor=#333333;verticalAlign=top;align=center;spacingTop=18;container=1;collapsible=0;recursiveResize=0;" value="«device»&lt;br&gt;&lt;b&gt;Main Application Server&lt;/b&gt;" vertex="1">
+          <mxGeometry height="190" width="330" x="40" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="mainapp" parent="mainserver" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#333333;" value="«artifact»&lt;br&gt;&lt;b&gt;Main Application&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="260" x="42" y="94" as="geometry" />
+        </mxCell>
+        <mxCell id="recserver" parent="region" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=15;fillColor=#F5F5F5;strokeColor=#333333;verticalAlign=top;align=center;spacingTop=18;container=1;collapsible=0;recursiveResize=0;" value="«device»&lt;br&gt;&lt;b&gt;Recitation Analysis Server&lt;/b&gt;" vertex="1">
+          <mxGeometry height="190" width="380" x="480" y="130" as="geometry" />
+        </mxCell>
+        <mxCell id="recservice" parent="recserver" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#333333;" value="«artifact»&lt;br&gt;&lt;b&gt;Recitation Analysis Service&lt;/b&gt;" vertex="1">
+          <mxGeometry height="70" width="290" x="50" y="95" as="geometry" />
+        </mxCell>
+        <mxCell id="dbserver" parent="region" style="shape=cube;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;darkOpacity=0.05;darkOpacity2=0.1;size=15;fillColor=#F5F5F5;strokeColor=#333333;verticalAlign=top;align=center;spacingTop=18;container=1;collapsible=0;recursiveResize=0;" value="«device»&lt;br&gt;&lt;b&gt;Database Server&lt;/b&gt;" vertex="1">
+          <mxGeometry height="170" width="330" x="40" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="appdb" parent="dbserver" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#333333;" value="«artifact»&lt;br&gt;&lt;b&gt;Application Database&lt;/b&gt;" vertex="1">
+          <mxGeometry height="60" width="260" x="40" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="note" parent="region" style="shape=note;whiteSpace=wrap;html=1;size=14;backgroundOutline=1;darkOpacity=0.05;fillColor=#FFFFCC;strokeColor=#333333;align=left;verticalAlign=middle;spacingLeft=8;spacingRight=8;fontSize=12;" value="The main application implements Account, Profile, Learning and Progress. These four components are deployed together." vertex="1">
+          <mxGeometry height="75" width="380" x="480" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="e_note" edge="1" parent="1" source="note" style="endArrow=none;html=1;rounded=0;dashed=1;edgeStyle=none;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.9;entryY=0;entryDx=0;entryDy=0;" target="mainserver" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="mobile" style="endArrow=none;html=1;rounded=0;edgeStyle=none;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="mainserver" value="HTTPS">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="mainserver" style="endArrow=none;html=1;rounded=0;edgeStyle=none;labelBackgroundColor=#FFFFFF;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="recserver" value="Private API">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" source="mainserver" style="endArrow=none;html=1;rounded=0;edgeStyle=none;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="dbserver" value="Database connection">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" edge="1" parent="1" source="resend" style="endArrow=none;html=1;rounded=0;edgeStyle=none;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="mainserver" value="HTTPS / Email API">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" source="mobile" style="endArrow=none;html=1;rounded=0;edgeStyle=none;labelBackgroundColor=#FFFFFF;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="qul" value="HTTPS /&lt;br&gt;recitation audio">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
