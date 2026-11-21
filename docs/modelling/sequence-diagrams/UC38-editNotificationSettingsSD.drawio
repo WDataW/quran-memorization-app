@@ -1,0 +1,300 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Edit Notification Settings" id="XicIe7N44BBarZjin5aR">
+    <mxGraphModel dx="1796" dy="1145" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1760" pageHeight="1750" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="diagram-frame" parent="1" style="shape=umlFrame;html=1;whiteSpace=wrap;pointerEvents=0;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=14;width=230;height=30;" value="Edit Notification Settings" vertex="1">
+          <mxGeometry height="1690" width="1700" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="actor-user" parent="1" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;strokeColor=#000000;fontFamily=Arial;fontSize=13;" value="User" vertex="1">
+          <mxGeometry height="55" width="30" x="95" y="68" as="geometry" />
+        </mxCell>
+        <mxCell id="participant-1" parent="1" style="html=1;whiteSpace=wrap;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontFamily=Arial;fontSize=14;" value=":NotificationService" vertex="1">
+          <mxGeometry height="45" width="220" x="560" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="participant-2" parent="1" style="html=1;whiteSpace=wrap;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontFamily=Arial;fontSize=14;" value=":NotificationSettings" vertex="1">
+          <mxGeometry height="45" width="220" x="860" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="participant-3" parent="1" style="html=1;whiteSpace=wrap;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontFamily=Arial;fontSize=14;" value=":LearningSchedule" vertex="1">
+          <mxGeometry height="45" width="220" x="1160" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="participant-4" parent="1" style="html=1;whiteSpace=wrap;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontFamily=Arial;fontSize=14;" value=":DeviceOperatingSystem" vertex="1">
+          <mxGeometry height="45" width="220" x="1460" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lifeline-0" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;startArrow=none;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="150" as="sourcePoint" />
+            <mxPoint x="110" y="1685" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lifeline-1" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;startArrow=none;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="670" y="125" as="sourcePoint" />
+            <mxPoint x="670" y="1685" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lifeline-2" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;startArrow=none;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="970" y="125" as="sourcePoint" />
+            <mxPoint x="970" y="1685" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lifeline-3" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;startArrow=none;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1270" y="125" as="sourcePoint" />
+            <mxPoint x="1270" y="1685" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lifeline-4" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;startArrow=none;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1570" y="125" as="sourcePoint" />
+            <mxPoint x="1570" y="1685" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="service-activation" parent="1" style="html=1;strokeColor=#000000;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="1440" width="10" x="665" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="permission-enabled-opt-guard" parent="1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=13;" value="[option is being enabled]" vertex="1">
+          <mxGeometry height="22" width="1560" x="115" y="421" as="geometry" />
+        </mxCell>
+        <mxCell id="permission-required-opt-guard" parent="1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=13;" value="[permissionStatus != granted]" vertex="1">
+          <mxGeometry height="22" width="1520" x="135" y="551" as="geometry" />
+        </mxCell>
+        <mxCell id="permission-ref-label" parent="1" style="text;html=1;align=center;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=13;" value="Request Notification Permission : permissionStatus" vertex="1">
+          <mxGeometry height="30" width="770" x="480" y="611" as="geometry" />
+        </mxCell>
+        <mxCell id="save-alt" parent="1" style="shape=umlFrame;html=1;whiteSpace=wrap;pointerEvents=0;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=13;width=70;height=24;" value="alt" vertex="1">
+          <mxGeometry height="720" width="1650" x="35" y="950" as="geometry" />
+        </mxCell>
+        <mxCell id="save-alt-guard" parent="1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=13;" value="[save successful]" vertex="1">
+          <mxGeometry height="22" width="1560" x="115" y="951" as="geometry" />
+        </mxCell>
+        <mxCell id="action-alt" parent="1" style="shape=umlFrame;html=1;whiteSpace=wrap;pointerEvents=0;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=13;width=70;height=24;" value="alt" vertex="1">
+          <mxGeometry height="390" width="1610" x="55" y="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="action-alt-guard" parent="1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=13;" value="[Learning reminders enabled]" vertex="1">
+          <mxGeometry height="22" width="1520" x="135" y="1061" as="geometry" />
+        </mxCell>
+        <mxCell id="schedule-exists-opt" parent="1" style="shape=umlFrame;html=1;whiteSpace=wrap;pointerEvents=0;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=13;width=70;height=24;" value="opt" vertex="1">
+          <mxGeometry height="90" width="1570" x="75" y="1180" as="geometry" />
+        </mxCell>
+        <mxCell id="schedule-exists-opt-guard" parent="1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=13;" value="[schedule exists]" vertex="1">
+          <mxGeometry height="22" width="1480" x="155" y="1181" as="geometry" />
+        </mxCell>
+        <mxCell id="action-separator-1" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;startArrow=none;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="1280" as="sourcePoint" />
+            <mxPoint x="1665" y="1280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="action-separator-1-guard" parent="1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=13;" value="[Motivational notifications enabled]" vertex="1">
+          <mxGeometry height="22" width="1520" x="135" y="1284" as="geometry" />
+        </mxCell>
+        <mxCell id="action-separator-2" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;startArrow=none;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="1370" as="sourcePoint" />
+            <mxPoint x="1665" y="1370" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="action-separator-2-guard" parent="1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=13;" value="[notification option disabled]" vertex="1">
+          <mxGeometry height="22" width="1520" x="135" y="1374" as="geometry" />
+        </mxCell>
+        <mxCell id="save-separator" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;startArrow=none;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="35" y="1515" as="sourcePoint" />
+            <mxPoint x="1685" y="1515" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="save-separator-guard" parent="1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=13;" value="[save failed]" vertex="1">
+          <mxGeometry height="22" width="1560" x="115" y="1519" as="geometry" />
+        </mxCell>
+        <mxCell id="open-settings" edge="1" parent="1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" value="openNotificationSettings()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="180" as="sourcePoint" />
+            <mxPoint x="365" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="settings-get" parent="1" style="html=1;strokeColor=#000000;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="50" width="10" x="965" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="get-settings" edge="1" parent="1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" value="getNotificationSettings()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="675" y="230" as="sourcePoint" />
+            <mxPoint x="965" y="230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="settings-data" edge="1" parent="1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=open;endFill=0;dashed=1;labelBackgroundColor=#FFFFFF;" value="notificationSettings">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="965" y="280" as="sourcePoint" />
+            <mxPoint x="675" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="display-settings" edge="1" parent="1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=open;endFill=0;labelBackgroundColor=#FFFFFF;" value="displayNotificationSettings()">
+          <mxGeometry relative="1" x="-0.4414" y="-5" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="665" y="325" as="sourcePoint" />
+            <mxPoint x="110" y="325" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="change-option" edge="1" parent="1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" value="changeOption(type, state)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="380" as="sourcePoint" />
+            <mxPoint x="365" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="permission-check-activation" parent="1" style="html=1;strokeColor=#000000;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="45" width="10" x="1565" y="475" as="geometry" />
+        </mxCell>
+        <mxCell id="permission-check" edge="1" parent="1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" value="getPermissionStatus()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="675" y="475" as="sourcePoint" />
+            <mxPoint x="1565" y="475" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="permission-status" edge="1" parent="1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=open;endFill=0;dashed=1;labelBackgroundColor=#FFFFFF;" value="permissionStatus">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1565" y="520" as="sourcePoint" />
+            <mxPoint x="675" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="display-option-off" edge="1" parent="1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=open;endFill=0;labelBackgroundColor=#FFFFFF;" value="displayPreviousState()">
+          <mxGeometry relative="1" x="-0.4054" y="-5" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="665" y="785" as="sourcePoint" />
+            <mxPoint x="110" y="785" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="settings-save" parent="1" style="html=1;strokeColor=#000000;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="45" width="10" x="965" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="save-option" edge="1" parent="1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" value="saveOption(type, state)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="675" y="870" as="sourcePoint" />
+            <mxPoint x="965" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="save-result" edge="1" parent="1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=open;endFill=0;dashed=1;labelBackgroundColor=#FFFFFF;" value="saveResult">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="965" y="915" as="sourcePoint" />
+            <mxPoint x="675" y="915" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="update-notifications" edge="1" parent="1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="735" y="995" />
+              <mxPoint x="735" y="1020" />
+            </Array>
+            <mxPoint x="675" y="995" as="sourcePoint" />
+            <mxPoint x="675" y="1020" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="update-notifications-label" parent="1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=13;" value="updateNotifications(type, state)" vertex="1">
+          <mxGeometry height="36" width="640" x="745" y="990" as="geometry" />
+        </mxCell>
+        <mxCell id="schedule-activation" parent="1" style="html=1;strokeColor=#000000;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="40" width="10" x="1265" y="1120" as="geometry" />
+        </mxCell>
+        <mxCell id="get-schedule" edge="1" parent="1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" value="getSchedule()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="675" y="1120" as="sourcePoint" />
+            <mxPoint x="1265" y="1120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="schedule-value" edge="1" parent="1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=open;endFill=0;dashed=1;labelBackgroundColor=#FFFFFF;" value="schedule / null">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1265" y="1160" as="sourcePoint" />
+            <mxPoint x="675" y="1160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="schedule-learning" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=55;height=20;fillColor=#FFFFFF;strokeColor=#000000;fontSize=12;" value="ref" vertex="1">
+          <mxGeometry height="60" width="1540" x="90" y="1207" as="geometry" />
+        </mxCell>
+        <mxCell id="schedule-learning-ref-label" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fillColor=default;strokeColor=none;fontSize=12;" value="Schedule Learning Reminders(schedule.id, SettingsChanged)" vertex="1">
+          <mxGeometry height="38" width="520" x="710" y="1218" as="geometry" />
+        </mxCell>
+        <mxCell id="schedule-motivational" parent="1" style="shape=umlFrame;whiteSpace=wrap;html=1;pointerEvents=0;width=55;height=20;fillColor=#FFFFFF;strokeColor=#000000;fontSize=12;" value="ref" vertex="1">
+          <mxGeometry height="54" width="1580" x="70" y="1310" as="geometry" />
+        </mxCell>
+        <mxCell id="schedule-motivational-ref-label" parent="1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;fillColor=default;strokeColor=none;fontSize=12;" value="Schedule Motivational Notifications" vertex="1">
+          <mxGeometry height="32" width="380" x="800" y="1324" as="geometry" />
+        </mxCell>
+        <mxCell id="cancel-activation" parent="1" style="html=1;strokeColor=#000000;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="24" width="10" x="1565" y="1420" as="geometry" />
+        </mxCell>
+        <mxCell id="cancel-notifications" edge="1" parent="1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" value="cancelPendingNotifications(type)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="675" y="1420" as="sourcePoint" />
+            <mxPoint x="1565" y="1420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="display-saved-state" edge="1" parent="1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=open;endFill=0;labelBackgroundColor=#FFFFFF;" value="displayNotificationSettings()">
+          <mxGeometry relative="1" x="-0.4414" y="-5" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="665" y="1485" as="sourcePoint" />
+            <mxPoint x="110" y="1485" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="settings-keep" parent="1" style="html=1;strokeColor=#000000;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="25" width="10" x="965" y="1565" as="geometry" />
+        </mxCell>
+        <mxCell id="keep-previous-state" edge="1" parent="1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" value="keepPreviousState()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="675" y="1565" as="sourcePoint" />
+            <mxPoint x="965" y="1565" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="display-previous-state" edge="1" parent="1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=open;endFill=0;labelBackgroundColor=#FFFFFF;" value="displayPreviousState()">
+          <mxGeometry relative="1" x="-0.4414" y="-10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="665" y="1620" as="sourcePoint" />
+            <mxPoint x="110" y="1620" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="settings-service-participant" parent="1" style="html=1;whiteSpace=wrap;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontFamily=Arial;fontSize=14;" value=":SettingsService" vertex="1">
+          <mxGeometry height="45" width="220" x="260" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="settings-service-lifeline" edge="1" parent="1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;startArrow=none;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="370" y="125" as="sourcePoint" />
+            <mxPoint x="370" y="1685" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="settings-open-activation" parent="1" style="html=1;strokeColor=#000000;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="145" width="10" x="365" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="settings-change-activation" parent="1" style="html=1;strokeColor=#000000;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="1265" width="10" x="365" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="open-settings-forward" edge="1" parent="1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" value="openNotificationSettings()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="375" y="205" as="sourcePoint" />
+            <mxPoint x="665" y="205" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="change-option-forward" edge="1" parent="1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" value="changeOption(type, state)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="375" y="405" as="sourcePoint" />
+            <mxPoint x="665" y="405" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="permission-ref" parent="1" style="shape=umlFrame;html=1;whiteSpace=wrap;pointerEvents=0;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=13;width=70;height=24;" value="ref" vertex="1">
+          <mxGeometry height="75" width="1570" x="75" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="permission-required-opt" parent="1" style="shape=umlFrame;html=1;whiteSpace=wrap;pointerEvents=0;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=13;width=70;height=24;" value="opt" vertex="1">
+          <mxGeometry height="135" width="1610" x="55" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="permission-enabled-opt" parent="1" style="shape=umlFrame;html=1;whiteSpace=wrap;pointerEvents=0;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=13;width=70;height=24;" value="opt" vertex="1">
+          <mxGeometry height="285" width="1650" x="35" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="permission-denied-break" parent="1" style="shape=umlFrame;html=1;whiteSpace=wrap;pointerEvents=0;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=13;width=70;height=24;" value="break" vertex="1">
+          <mxGeometry height="115" width="1650" x="35" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="permission-denied-break-guard" parent="1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=default;fontFamily=Arial;fontSize=13;" value="[option is being enabled and permissionStatus != granted]" vertex="1">
+          <mxGeometry height="22" width="355" x="115" y="721" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

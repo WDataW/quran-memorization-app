@@ -1,0 +1,318 @@
+<mxfile host="app.diagrams.net" scale="1" border="0">
+  <diagram name="Copy of Copy of Register" id="a6SFwwdys4p72xgpOaM0">
+    <mxGraphModel dx="1290" dy="823" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1940" pageHeight="1765" math="0" shadow="0">
+      <root>
+        <mxCell id="9UHsIMsVKhpTbGHfIWr_-0" />
+        <mxCell id="9UHsIMsVKhpTbGHfIWr_-1" parent="9UHsIMsVKhpTbGHfIWr_-0" />
+        <mxCell id="diagram-frame" parent="9UHsIMsVKhpTbGHfIWr_-1" style="shape=umlFrame;html=1;whiteSpace=wrap;pointerEvents=0;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=14;width=130;height=30;" value="Recite Verses" vertex="1">
+          <mxGeometry height="1715" width="1890" x="20" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="user" parent="9UHsIMsVKhpTbGHfIWr_-1" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;strokeColor=#000000;fontFamily=Arial;fontSize=13;" value="User" vertex="1">
+          <mxGeometry height="62" width="30" x="85" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="participant-1" parent="9UHsIMsVKhpTbGHfIWr_-1" style="html=1;whiteSpace=wrap;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontFamily=Arial;fontSize=14;" value=":RecitationService" vertex="1">
+          <mxGeometry height="48" width="220" x="310" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="participant-2" parent="9UHsIMsVKhpTbGHfIWr_-1" style="html=1;whiteSpace=wrap;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontFamily=Arial;fontSize=14;" value=":RecitationAttempt" vertex="1">
+          <mxGeometry height="48" width="220" x="670" y="601" as="geometry" />
+        </mxCell>
+        <mxCell id="participant-3" parent="9UHsIMsVKhpTbGHfIWr_-1" style="html=1;whiteSpace=wrap;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontFamily=Arial;fontSize=14;" value=":Verse" vertex="1">
+          <mxGeometry height="48" width="220" x="1010" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="participant-4" parent="9UHsIMsVKhpTbGHfIWr_-1" style="html=1;whiteSpace=wrap;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontFamily=Arial;fontSize=14;" value=":Word" vertex="1">
+          <mxGeometry height="48" width="220" x="1330" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="participant-5" parent="9UHsIMsVKhpTbGHfIWr_-1" style="html=1;whiteSpace=wrap;align=center;verticalAlign=middle;strokeColor=#000000;fillColor=#FFFFFF;fontFamily=Arial;fontSize=14;" value=":DeviceOperatingSystem" vertex="1">
+          <mxGeometry height="48" width="220" x="1650" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="lifeline-0" edge="1" parent="9UHsIMsVKhpTbGHfIWr_-1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;startArrow=none;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="150" as="sourcePoint" />
+            <mxPoint x="100" y="1710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lifeline-1" edge="1" parent="9UHsIMsVKhpTbGHfIWr_-1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;startArrow=none;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="138" as="sourcePoint" />
+            <mxPoint x="420" y="1710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lifeline-2" edge="1" parent="9UHsIMsVKhpTbGHfIWr_-1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;startArrow=none;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="780" y="649" as="sourcePoint" />
+            <mxPoint x="780" y="1710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lifeline-3" edge="1" parent="9UHsIMsVKhpTbGHfIWr_-1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;startArrow=none;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1120" y="138" as="sourcePoint" />
+            <mxPoint x="1120" y="1710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lifeline-4" edge="1" parent="9UHsIMsVKhpTbGHfIWr_-1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;startArrow=none;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1440" y="138" as="sourcePoint" />
+            <mxPoint x="1440" y="1710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="lifeline-5" edge="1" parent="9UHsIMsVKhpTbGHfIWr_-1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;startArrow=none;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1760" y="138" as="sourcePoint" />
+            <mxPoint x="1760" y="1710" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="service-activation" parent="9UHsIMsVKhpTbGHfIWr_-1" style="html=1;strokeColor=#000000;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="1470" width="12" x="414" y="205" as="geometry" />
+        </mxCell>
+        <mxCell id="permission-opt" parent="9UHsIMsVKhpTbGHfIWr_-1" style="shape=umlFrame;html=1;whiteSpace=wrap;pointerEvents=0;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=13;width=60;height=24;" value="opt" vertex="1">
+          <mxGeometry height="140" width="1855" x="35" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="permission-opt-guard" parent="9UHsIMsVKhpTbGHfIWr_-1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=13;" value="[microphone permission not granted]" vertex="1">
+          <mxGeometry height="22" width="1775" x="105" y="301" as="geometry" />
+        </mxCell>
+        <mxCell id="permission-break" parent="9UHsIMsVKhpTbGHfIWr_-1" style="shape=umlFrame;html=1;whiteSpace=wrap;pointerEvents=0;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=13;width=60;height=24;" value="break" vertex="1">
+          <mxGeometry height="100" width="1855" x="35" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="permission-break-guard" parent="9UHsIMsVKhpTbGHfIWr_-1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=13;" value="[microphone permission not granted after request]" vertex="1">
+          <mxGeometry height="22" width="1775" x="105" y="456" as="geometry" />
+        </mxCell>
+        <mxCell id="attempt-loop" parent="9UHsIMsVKhpTbGHfIWr_-1" style="shape=umlFrame;html=1;whiteSpace=wrap;pointerEvents=0;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=13;width=60;height=24;" value="loop" vertex="1">
+          <mxGeometry height="1110" width="1855" x="35" y="575" as="geometry" />
+        </mxCell>
+        <mxCell id="attempt-loop-guard" parent="9UHsIMsVKhpTbGHfIWr_-1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=13;" value="[first attempt or restart requested]" vertex="1">
+          <mxGeometry height="22" width="1775" x="105" y="576" as="geometry" />
+        </mxCell>
+        <mxCell id="word-loop" parent="9UHsIMsVKhpTbGHfIWr_-1" style="shape=umlFrame;html=1;whiteSpace=wrap;pointerEvents=0;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=13;width=60;height=24;" value="loop" vertex="1">
+          <mxGeometry height="530" width="1830" x="55" y="735" as="geometry" />
+        </mxCell>
+        <mxCell id="word-loop-guard" parent="9UHsIMsVKhpTbGHfIWr_-1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=default;fontFamily=Arial;fontSize=13;" value="[each unevaluated word while no restart is requested]" vertex="1">
+          <mxGeometry height="22" width="325" x="119" y="736" as="geometry" />
+        </mxCell>
+        <mxCell id="reveal-opt" parent="9UHsIMsVKhpTbGHfIWr_-1" style="shape=umlFrame;html=1;whiteSpace=wrap;pointerEvents=0;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=13;width=60;height=24;" value="opt" vertex="1">
+          <mxGeometry height="100" width="1170" x="350" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="reveal-opt-guard" parent="9UHsIMsVKhpTbGHfIWr_-1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=13;" value="[word was concealed]" vertex="1">
+          <mxGeometry height="22" width="1060" x="450" y="871" as="geometry" />
+        </mxCell>
+        <mxCell id="show-restart-opt" parent="9UHsIMsVKhpTbGHfIWr_-1" style="shape=umlFrame;html=1;whiteSpace=wrap;pointerEvents=0;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=13;width=60;height=24;" value="opt" vertex="1">
+          <mxGeometry height="85" width="520" x="75" y="1075" as="geometry" />
+        </mxCell>
+        <mxCell id="show-restart-opt-guard" parent="9UHsIMsVKhpTbGHfIWr_-1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=13;" value="[first word result and restartAllowed]" vertex="1">
+          <mxGeometry height="22" width="440" x="145" y="1076" as="geometry" />
+        </mxCell>
+        <mxCell id="restart-opt" parent="9UHsIMsVKhpTbGHfIWr_-1" style="shape=umlFrame;html=1;whiteSpace=wrap;pointerEvents=0;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=13;width=60;height=24;" value="opt" vertex="1">
+          <mxGeometry height="80" width="520" x="75" y="1175" as="geometry" />
+        </mxCell>
+        <mxCell id="restart-opt-guard" parent="9UHsIMsVKhpTbGHfIWr_-1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=13;" value="[user chooses restart and restartAllowed]" vertex="1">
+          <mxGeometry height="22" width="440" x="145" y="1176" as="geometry" />
+        </mxCell>
+        <mxCell id="outcome-alt" parent="9UHsIMsVKhpTbGHfIWr_-1" style="shape=umlFrame;html=1;whiteSpace=wrap;pointerEvents=0;fillColor=none;strokeColor=#000000;fontFamily=Arial;fontSize=13;width=60;height=24;" value="alt" vertex="1">
+          <mxGeometry height="395" width="1830" x="55" y="1280" as="geometry" />
+        </mxCell>
+        <mxCell id="outcome-alt-guard" parent="9UHsIMsVKhpTbGHfIWr_-1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=13;" value="[restart requested]" vertex="1">
+          <mxGeometry height="22" width="1750" x="125" y="1281" as="geometry" />
+        </mxCell>
+        <mxCell id="outcome-separator" edge="1" parent="9UHsIMsVKhpTbGHfIWr_-1" style="edgeStyle=none;html=1;rounded=0;strokeColor=#000000;dashed=1;startArrow=none;endArrow=none;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="55" y="1445" as="sourcePoint" />
+            <mxPoint x="1885" y="1445" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="outcome-separator-guard" parent="9UHsIMsVKhpTbGHfIWr_-1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=13;" value="[all words evaluated]" vertex="1">
+          <mxGeometry height="22" width="1750" x="125" y="1449" as="geometry" />
+        </mxCell>
+        <mxCell id="start-recording" edge="1" parent="9UHsIMsVKhpTbGHfIWr_-1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" value="startRecording(scope, initialStates, restartAllowed)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="205" as="sourcePoint" />
+            <mxPoint x="414" y="205" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="os-check" parent="9UHsIMsVKhpTbGHfIWr_-1" style="html=1;strokeColor=#000000;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="30" width="12" x="1754" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="get-microphone-permission" edge="1" parent="9UHsIMsVKhpTbGHfIWr_-1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" value="getMicrophonePermissionStatus()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="426" y="250" as="sourcePoint" />
+            <mxPoint x="1754" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="permission-status" edge="1" parent="9UHsIMsVKhpTbGHfIWr_-1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=open;endFill=0;dashed=1;labelBackgroundColor=#FFFFFF;" value="microphonePermissionStatus">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1754" y="280" as="sourcePoint" />
+            <mxPoint x="426" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="os-request" parent="9UHsIMsVKhpTbGHfIWr_-1" style="html=1;strokeColor=#000000;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="60" width="12" x="1754" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="request-microphone-permission" edge="1" parent="9UHsIMsVKhpTbGHfIWr_-1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" value="requestMicrophonePermission()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="426" y="350" as="sourcePoint" />
+            <mxPoint x="1754" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="permission-result" edge="1" parent="9UHsIMsVKhpTbGHfIWr_-1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=open;endFill=0;dashed=1;labelBackgroundColor=#FFFFFF;" value="microphonePermissionStatus">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1754" y="410" as="sourcePoint" />
+            <mxPoint x="426" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="permission-denied" edge="1" parent="9UHsIMsVKhpTbGHfIWr_-1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=open;endFill=0;dashed=1;labelBackgroundColor=#FFFFFF;" value="errorMessage">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="510" as="sourcePoint" />
+            <mxPoint x="100" y="510" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="create-attempt" edge="1" parent="9UHsIMsVKhpTbGHfIWr_-1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=open;endFill=0;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;labelBackgroundColor=#FFFFFF;" target="participant-2" value="createAttempt()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="426" y="625" as="sourcePoint" />
+            <mxPoint x="670" y="625" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="verse-words" parent="9UHsIMsVKhpTbGHfIWr_-1" style="html=1;strokeColor=#000000;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="35" width="12" x="1114" y="690" as="geometry" />
+        </mxCell>
+        <mxCell id="get-words" edge="1" parent="9UHsIMsVKhpTbGHfIWr_-1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" value="getWords(scope)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="426" y="690" as="sourcePoint" />
+            <mxPoint x="1114" y="690" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="ordered-words" edge="1" parent="9UHsIMsVKhpTbGHfIWr_-1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=open;endFill=0;dashed=1;labelBackgroundColor=#FFFFFF;" value="orderedWords">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1114" y="725" as="sourcePoint" />
+            <mxPoint x="426" y="725" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="record-recitation" edge="1" parent="9UHsIMsVKhpTbGHfIWr_-1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" value="recordRecitation(audioInput)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="780" as="sourcePoint" />
+            <mxPoint x="414" y="780" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="evaluate-word" edge="1" parent="9UHsIMsVKhpTbGHfIWr_-1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="800" />
+              <mxPoint x="490" y="828" />
+            </Array>
+            <mxPoint x="426" y="800" as="sourcePoint" />
+            <mxPoint x="426" y="828" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="evaluate-word-label" parent="9UHsIMsVKhpTbGHfIWr_-1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=13;" value="evaluateWord(recitedWord, expectedWord)" vertex="1">
+          <mxGeometry height="36" width="340" x="500" y="792" as="geometry" />
+        </mxCell>
+        <mxCell id="word-feedback" parent="9UHsIMsVKhpTbGHfIWr_-1" style="html=1;strokeColor=#000000;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="120" width="12" x="1434" y="845" as="geometry" />
+        </mxCell>
+        <mxCell id="set-feedback" edge="1" parent="9UHsIMsVKhpTbGHfIWr_-1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" value="setFeedback(result)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="426" y="855" as="sourcePoint" />
+            <mxPoint x="1434" y="855" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="reveal" edge="1" parent="9UHsIMsVKhpTbGHfIWr_-1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" value="reveal()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="426" y="925" as="sourcePoint" />
+            <mxPoint x="1434" y="925" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="attempt-word-result" parent="9UHsIMsVKhpTbGHfIWr_-1" style="html=1;strokeColor=#000000;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="30" width="12" x="774" y="995" as="geometry" />
+        </mxCell>
+        <mxCell id="add-word-result" edge="1" parent="9UHsIMsVKhpTbGHfIWr_-1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" value="addWordResult(word, result)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="426" y="995" as="sourcePoint" />
+            <mxPoint x="774" y="995" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="word-feedback-ui" edge="1" parent="9UHsIMsVKhpTbGHfIWr_-1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=open;endFill=0;dashed=1;labelBackgroundColor=#FFFFFF;" value="wordResult">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="1055" as="sourcePoint" />
+            <mxPoint x="100" y="1055" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="show-restart-option" edge="1" parent="9UHsIMsVKhpTbGHfIWr_-1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=open;endFill=0;dashed=0;labelBackgroundColor=#FFFFFF;" value="showRestartOption()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="1130" as="sourcePoint" />
+            <mxPoint x="100" y="1130" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="restart" edge="1" parent="9UHsIMsVKhpTbGHfIWr_-1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" value="restart()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="100" y="1230" as="sourcePoint" />
+            <mxPoint x="414" y="1230" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="discard-activation" parent="9UHsIMsVKhpTbGHfIWr_-1" style="html=1;strokeColor=#000000;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="30" width="12" x="774" y="1335" as="geometry" />
+        </mxCell>
+        <mxCell id="discard-attempt" edge="1" parent="9UHsIMsVKhpTbGHfIWr_-1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" value="discardAttempt()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="426" y="1335" as="sourcePoint" />
+            <mxPoint x="774" y="1335" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="restore-activation" parent="9UHsIMsVKhpTbGHfIWr_-1" style="html=1;strokeColor=#000000;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="32" width="12" x="1434" y="1395" as="geometry" />
+        </mxCell>
+        <mxCell id="restore-word-states" edge="1" parent="9UHsIMsVKhpTbGHfIWr_-1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" value="restoreWordStates(initialStates)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="426" y="1395" as="sourcePoint" />
+            <mxPoint x="1434" y="1395" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="attempt-complete" parent="9UHsIMsVKhpTbGHfIWr_-1" style="html=1;strokeColor=#000000;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="30" width="12" x="774" y="1490" as="geometry" />
+        </mxCell>
+        <mxCell id="check-complete" edge="1" parent="9UHsIMsVKhpTbGHfIWr_-1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" value="isComplete()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="426" y="1490" as="sourcePoint" />
+            <mxPoint x="774" y="1490" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="complete-return" edge="1" parent="9UHsIMsVKhpTbGHfIWr_-1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=open;endFill=0;dashed=1;labelBackgroundColor=#FFFFFF;" value="complete">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="774" y="1520" as="sourcePoint" />
+            <mxPoint x="426" y="1520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="stop-recording" edge="1" parent="9UHsIMsVKhpTbGHfIWr_-1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="1545" />
+              <mxPoint x="490" y="1573" />
+            </Array>
+            <mxPoint x="426" y="1545" as="sourcePoint" />
+            <mxPoint x="426" y="1573" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="stop-recording-label" parent="9UHsIMsVKhpTbGHfIWr_-1" style="text;html=1;align=left;verticalAlign=middle;strokeColor=none;fillColor=none;fontFamily=Arial;fontSize=13;" value="stopRecording()" vertex="1">
+          <mxGeometry height="36" width="340" x="500" y="1537" as="geometry" />
+        </mxCell>
+        <mxCell id="results-activation" parent="9UHsIMsVKhpTbGHfIWr_-1" style="html=1;strokeColor=#000000;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="30" width="12" x="774" y="1595" as="geometry" />
+        </mxCell>
+        <mxCell id="get-word-results" edge="1" parent="9UHsIMsVKhpTbGHfIWr_-1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=block;endFill=1;labelBackgroundColor=#FFFFFF;" value="getWordResults()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="426" y="1595" as="sourcePoint" />
+            <mxPoint x="774" y="1595" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="word-results" edge="1" parent="9UHsIMsVKhpTbGHfIWr_-1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=open;endFill=0;dashed=1;labelBackgroundColor=#FFFFFF;" value="wordResults">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="774" y="1625" as="sourcePoint" />
+            <mxPoint x="426" y="1625" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="final-word-results" edge="1" parent="9UHsIMsVKhpTbGHfIWr_-1" style="edgeStyle=none;html=1;verticalAlign=bottom;rounded=0;strokeColor=#000000;fontFamily=Arial;fontSize=13;endArrow=open;endFill=0;dashed=1;labelBackgroundColor=#FFFFFF;" value="wordResults">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="414" y="1660" as="sourcePoint" />
+            <mxPoint x="20" y="1660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

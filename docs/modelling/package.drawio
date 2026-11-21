@@ -1,0 +1,194 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="system-packages" name="System Packages">
+    <mxGraphModel dx="1636" dy="1043" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1840" pageHeight="1500" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="package-Account" parent="1" style="shape=folder;tabWidth=185;tabHeight=32;html=0;whiteSpace=wrap;align=left;verticalAlign=top;spacingTop=5;spacingLeft=10;fontFamily=Arial;fontStyle=1;fontSize=16;fillColor=#ffffff;strokeColor=#315a74;strokeWidth=2;container=1;" value="Account" vertex="1">
+          <mxGeometry height="320" width="350" x="70" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="VerificationLink" parent="package-Account" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#315a74;" value="VerificationLink" vertex="1">
+          <mxGeometry height="36" width="310" x="20" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Account" parent="package-Account" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#315a74;" value="Account" vertex="1">
+          <mxGeometry height="36" width="310" x="20" y="97" as="geometry" />
+        </mxCell>
+        <mxCell id="PasswordResetLink" parent="package-Account" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#315a74;" value="PasswordResetLink" vertex="1">
+          <mxGeometry height="36" width="310" x="20" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="Session" parent="package-Account" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#315a74;" value="Session" vertex="1">
+          <mxGeometry height="36" width="310" x="20" y="191" as="geometry" />
+        </mxCell>
+        <mxCell id="AuthenticationService" parent="package-Account" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#315a74;" value="AuthenticationService" vertex="1">
+          <mxGeometry height="36" width="310" x="20" y="238" as="geometry" />
+        </mxCell>
+        <mxCell id="package-Profile" parent="1" style="shape=folder;tabWidth=185;tabHeight=32;html=0;whiteSpace=wrap;align=left;verticalAlign=top;spacingTop=5;spacingLeft=10;fontFamily=Arial;fontStyle=1;fontSize=16;fillColor=#ffffff;strokeColor=#48745c;strokeWidth=2;container=1;" value="Profile" vertex="1">
+          <mxGeometry height="220" width="360" x="550" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="Profile" parent="package-Profile" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#48745c;" value="Profile" vertex="1">
+          <mxGeometry height="36" width="320" x="20" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="MemorizationLevel" parent="package-Profile" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#48745c;" value="MemorizationLevel" vertex="1">
+          <mxGeometry height="36" width="320" x="20" y="97" as="geometry" />
+        </mxCell>
+        <mxCell id="ProfileService" parent="package-Profile" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#48745c;" value="ProfileService" vertex="1">
+          <mxGeometry height="36" width="320" x="20" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="package-Learning" parent="1" style="shape=folder;tabWidth=185;tabHeight=32;html=0;whiteSpace=wrap;align=left;verticalAlign=top;spacingTop=5;spacingLeft=10;fontFamily=Arial;fontStyle=1;fontSize=16;fillColor=#ffffff;strokeColor=#315f83;strokeWidth=2;container=1;" value="Learning" vertex="1">
+          <mxGeometry height="370" width="640" x="550" y="376" as="geometry" />
+        </mxCell>
+        <mxCell id="Surah" parent="package-Learning" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#315f83;" value="Surah" vertex="1">
+          <mxGeometry height="36" width="293" x="20" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Verse" parent="package-Learning" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#315f83;" value="Verse" vertex="1">
+          <mxGeometry height="36" width="293" x="327" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="Word" parent="package-Learning" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#315f83;" value="Word" vertex="1">
+          <mxGeometry height="36" width="293" x="20" y="97" as="geometry" />
+        </mxCell>
+        <mxCell id="Lesson" parent="package-Learning" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#315f83;" value="Lesson" vertex="1">
+          <mxGeometry height="36" width="293" x="327" y="97" as="geometry" />
+        </mxCell>
+        <mxCell id="MemorizationExercise" parent="package-Learning" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#315f83;" value="MemorizationExercise" vertex="1">
+          <mxGeometry height="36" width="293" x="20" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="ReinforcementExercise" parent="package-Learning" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#315f83;" value="ReinforcementExercise" vertex="1">
+          <mxGeometry height="36" width="293" x="327" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="RoadmapService" parent="package-Learning" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#315f83;" value="RoadmapService" vertex="1">
+          <mxGeometry height="36" width="293" x="20" y="191" as="geometry" />
+        </mxCell>
+        <mxCell id="MemorizationLessonService" parent="package-Learning" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#315f83;" value="MemorizationLessonService" vertex="1">
+          <mxGeometry height="36" width="293" x="327" y="191" as="geometry" />
+        </mxCell>
+        <mxCell id="ReinforcementExerciseService" parent="package-Learning" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#315f83;" value="ReinforcementExerciseService" vertex="1">
+          <mxGeometry height="36" width="293" x="20" y="238" as="geometry" />
+        </mxCell>
+        <mxCell id="ReviewLessonService" parent="package-Learning" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#315f83;" value="ReviewLessonService" vertex="1">
+          <mxGeometry height="36" width="293" x="327" y="238" as="geometry" />
+        </mxCell>
+        <mxCell id="SurahSelectionService" parent="package-Learning" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#315f83;" value="SurahSelectionService" vertex="1">
+          <mxGeometry height="36" width="293" x="20" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="package-Progress" parent="1" style="shape=folder;tabWidth=185;tabHeight=32;html=0;whiteSpace=wrap;align=left;verticalAlign=top;spacingTop=5;spacingLeft=10;fontFamily=Arial;fontStyle=1;fontSize=16;fillColor=#ffffff;strokeColor=#665889;strokeWidth=2;container=1;" value="Progress" vertex="1">
+          <mxGeometry height="600" width="350" x="70" y="450" as="geometry">
+            <mxRectangle height="40" width="120" x="70" y="450" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="SurahProgress" parent="package-Progress" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#665889;" value="SurahProgress" vertex="1">
+          <mxGeometry height="36" width="310" x="20" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="ActiveStreak" parent="package-Progress" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#665889;" value="ActiveStreak" vertex="1">
+          <mxGeometry height="36" width="310" x="20" y="97" as="geometry" />
+        </mxCell>
+        <mxCell id="MistakeRecord" parent="package-Progress" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#665889;" value="MistakeRecord" vertex="1">
+          <mxGeometry height="36" width="310" x="20" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="ProgressDashboardService" parent="package-Progress" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#665889;" value="ProgressDashboardService" vertex="1">
+          <mxGeometry height="36" width="310" x="20" y="191" as="geometry" />
+        </mxCell>
+        <mxCell id="LearningSchedule" parent="package-Progress" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#665889;" value="LearningSchedule" vertex="1">
+          <mxGeometry height="36" width="310" x="20" y="238" as="geometry" />
+        </mxCell>
+        <mxCell id="DailyProgress" parent="package-Progress" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#665889;" value="DailyProgress" vertex="1">
+          <mxGeometry height="36" width="310" x="20" y="285" as="geometry" />
+        </mxCell>
+        <mxCell id="ScheduledDay" parent="package-Progress" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#665889;" value="ScheduledDay" vertex="1">
+          <mxGeometry height="36" width="310" x="20" y="332" as="geometry" />
+        </mxCell>
+        <mxCell id="ScheduleService" parent="package-Progress" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#665889;" value="ScheduleService" vertex="1">
+          <mxGeometry height="36" width="310" x="20" y="379" as="geometry" />
+        </mxCell>
+        <mxCell id="ScheduleProgressService" parent="package-Progress" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#665889;" value="ScheduleProgressService" vertex="1">
+          <mxGeometry height="36" width="310" x="20" y="426" as="geometry" />
+        </mxCell>
+        <mxCell id="StreakService" parent="package-Progress" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#665889;" value="StreakService" vertex="1">
+          <mxGeometry height="36" width="310" x="20" y="473" as="geometry" />
+        </mxCell>
+        <mxCell id="CompletionNotification" parent="package-Progress" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#665889;" value="CompletionNotification" vertex="1">
+          <mxGeometry height="36" width="310" x="20" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="package-Recitation" parent="1" style="shape=folder;tabWidth=185;tabHeight=32;html=0;whiteSpace=wrap;align=left;verticalAlign=top;spacingTop=5;spacingLeft=10;fontFamily=Arial;fontStyle=1;fontSize=16;fillColor=#ffffff;strokeColor=#315F83;strokeWidth=2;container=1;" value="Recitation" vertex="1">
+          <mxGeometry height="230" width="380" x="1280" y="416" as="geometry" />
+        </mxCell>
+        <mxCell id="RecitationService" parent="package-Recitation" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#315F83;" value="RecitationService" vertex="1">
+          <mxGeometry height="36" width="340" x="20" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RecitationAttempt" parent="package-Recitation" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#315F83;" value="RecitationAttempt" vertex="1">
+          <mxGeometry height="36" width="340" x="20" y="97" as="geometry" />
+        </mxCell>
+        <mxCell id="PlaybackService" parent="package-Recitation" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#315F83;" value="PlaybackService" vertex="1">
+          <mxGeometry height="36" width="340" x="20" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="package-Settings" parent="1" style="shape=folder;tabWidth=185;tabHeight=32;html=0;whiteSpace=wrap;align=left;verticalAlign=top;spacingTop=5;spacingLeft=10;fontFamily=Arial;fontStyle=1;fontSize=16;strokeWidth=2;container=1;strokeColor=#315F83;" value="Settings" vertex="1">
+          <mxGeometry height="260" width="420" x="650" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="NotificationSettings" parent="package-Settings" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#315F83;" value="NotificationSettings" vertex="1">
+          <mxGeometry height="36" width="380" x="20" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="NotificationService" parent="package-Settings" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#315F83;" value="NotificationService" vertex="1">
+          <mxGeometry height="36" width="380" x="20" y="97" as="geometry" />
+        </mxCell>
+        <mxCell id="AppSettings" parent="package-Settings" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#315F83;" value="AppSettings" vertex="1">
+          <mxGeometry height="36" width="380" x="20" y="144" as="geometry" />
+        </mxCell>
+        <mxCell id="SettingsService" parent="package-Settings" style="rounded=0;html=0;whiteSpace=wrap;fontFamily=Arial;fontSize=14;fillColor=#f8fafb;strokeColor=#315F83;" value="SettingsService" vertex="1">
+          <mxGeometry height="36" width="380" x="20" y="191" as="geometry" />
+        </mxCell>
+        <mxCell id="dependency-1" edge="1" parent="1" source="package-Profile" style="edgeStyle=none;rounded=0;html=0;dashed=1;endArrow=open;endFill=0;startArrow=none;strokeColor=#4a5c6b;strokeWidth=1.5;jumpStyle=arc;jumpSize=9;exitX=0.0;exitY=0.4090909090909091;exitPerimeter=0;entryX=1.0;entryY=0.28125;entryPerimeter=0;" target="package-Account" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dependency-2" edge="1" parent="1" source="package-Profile" style="edgeStyle=none;rounded=0;html=0;dashed=1;endArrow=open;endFill=0;startArrow=none;strokeColor=#4a5c6b;strokeWidth=1.5;jumpStyle=arc;jumpSize=9;exitX=0.5;exitY=1.0;exitPerimeter=0;entryX=0.281;entryY=0.081;entryPerimeter=0;entryDx=0;entryDy=0;" target="package-Learning" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dependency-3" edge="1" parent="1" source="package-Profile" style="edgeStyle=none;rounded=0;html=0;dashed=1;endArrow=open;endFill=0;startArrow=none;strokeColor=#4a5c6b;strokeWidth=1.5;jumpStyle=arc;jumpSize=9;exitX=0;exitY=0.75;exitPerimeter=0;exitDx=0;exitDy=8;entryX=1.002;entryY=0.117;entryDx=0;entryDy=0;entryPerimeter=0;" target="package-Progress" value="">
+          <mxGeometry relative="1" x="0.3357" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="263" />
+              <mxPoint x="490" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dependency-4" edge="1" parent="1" source="package-Progress" style="edgeStyle=none;rounded=0;html=0;dashed=1;endArrow=open;endFill=0;startArrow=none;strokeColor=#4a5c6b;strokeWidth=1.5;jumpStyle=arc;jumpSize=9;exitX=0.5;exitY=0.0;exitPerimeter=0;entryX=0.5;entryY=1.0;entryPerimeter=0;" target="package-Account" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dependency-5" edge="1" parent="1" source="package-Learning" style="edgeStyle=none;rounded=0;html=0;dashed=1;endArrow=open;endFill=0;startArrow=none;strokeColor=#4a5c6b;strokeWidth=1.5;jumpStyle=arc;jumpSize=9;exitX=0.548;exitY=0.086;exitPerimeter=0;entryX=1;entryY=0.84;entryPerimeter=0;entryDx=0;entryDy=0;exitDx=0;exitDy=0;" target="package-Account" value="">
+          <mxGeometry relative="1" x="-0.3559" as="geometry">
+            <Array as="points">
+              <mxPoint x="900" y="388.88" />
+              <mxPoint x="900" y="360" />
+              <mxPoint x="830" y="360" />
+              <mxPoint x="590" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dependency-6" edge="1" parent="1" source="package-Learning" style="edgeStyle=none;rounded=0;html=0;dashed=1;endArrow=open;endFill=0;startArrow=none;strokeColor=#4a5c6b;strokeWidth=1.5;jumpStyle=arc;jumpSize=9;exitX=-0.002;exitY=0.74;exitPerimeter=0;entryX=1.0;entryY=0.3333333333333333;entryPerimeter=0;exitDx=0;exitDy=0;" target="package-Progress" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dependency-7" edge="1" parent="1" source="package-Progress" style="edgeStyle=none;rounded=0;html=0;dashed=1;endArrow=open;endFill=0;startArrow=none;strokeColor=#4a5c6b;strokeWidth=1.5;jumpStyle=arc;jumpSize=9;exitX=1.0;exitY=0.45;exitPerimeter=0;entryX=0.002;entryY=0.929;entryPerimeter=0;entryDx=0;entryDy=0;" target="package-Learning" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dependency-8" edge="1" parent="1" source="package-Learning" style="edgeStyle=none;rounded=0;html=0;dashed=1;endArrow=open;endFill=0;startArrow=none;strokeColor=#4a5c6b;strokeWidth=1.5;jumpStyle=arc;jumpSize=9;exitX=1;exitY=0.26756756756756755;exitPerimeter=0;entryX=0;entryY=0.2565217391304348;entryPerimeter=0;" target="package-Recitation" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dependency-9" edge="1" parent="1" source="package-Recitation" style="edgeStyle=none;rounded=0;html=0;dashed=1;endArrow=open;endFill=0;startArrow=none;strokeColor=#4a5c6b;strokeWidth=1.5;jumpStyle=arc;jumpSize=9;exitX=0;exitY=0.5608695652173913;exitPerimeter=0;entryX=1;entryY=0.45675675675675675;entryPerimeter=0;" target="package-Learning" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dependency-12" edge="1" parent="1" source="package-Progress" style="edgeStyle=none;rounded=0;html=0;dashed=1;endArrow=open;endFill=0;startArrow=none;strokeColor=#4a5c6b;strokeWidth=1.5;jumpStyle=arc;jumpSize=9;exitX=1.006;exitY=0.917;exitPerimeter=0;exitDx=0;exitDy=0;entryX=0;entryY=0.7692307692307693;entryDx=0;entryDy=0;entryPerimeter=0;" target="package-Settings" value="">
+          <mxGeometry relative="1" x="0.1545" as="geometry">
+            <Array as="points" />
+            <mxPoint x="419.99999999999994" y="996.8000000000002" as="sourcePoint" />
+            <mxPoint x="649.16" y="1000" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="H-nEeONJ2zdvZZEmGdBJ-3" edge="1" parent="1" source="package-Settings" style="edgeStyle=none;rounded=0;html=0;dashed=1;endArrow=open;endFill=0;startArrow=none;strokeColor=#4a5c6b;strokeWidth=1.5;jumpStyle=arc;jumpSize=9;exitX=0;exitY=0.46153846153846156;exitPerimeter=0;exitDx=0;exitDy=0;entryX=0.999;entryY=0.781;entryDx=0;entryDy=0;entryPerimeter=0;" target="package-Progress" value="">
+          <mxGeometry relative="1" x="-0.5032" as="geometry">
+            <Array as="points" />
+            <mxPoint x="510" y="870" as="sourcePoint" />
+            <mxPoint x="739.16" y="870" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

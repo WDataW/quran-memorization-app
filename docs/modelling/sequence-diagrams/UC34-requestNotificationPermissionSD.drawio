@@ -1,0 +1,176 @@
+<mxfile host="app.diagrams.net">
+  <diagram id="notification-permission" name="Request Notification Permission">
+    <mxGraphModel dx="1963" dy="1315" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1160" pageHeight="1430" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="2" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;shape=umlFrame;whiteSpace=wrap;fillColor=none;align=center;width=250;height=28;" value="&lt;span style=&quot;text-align: left;&quot;&gt;Request Notification Permission&lt;/span&gt;" vertex="1">
+          <mxGeometry height="1268" width="1120" x="20" y="22" as="geometry" />
+        </mxCell>
+        <mxCell id="4" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;fillColor=#FFFFFF;" value="User" vertex="1">
+          <mxGeometry height="50" width="30" x="80" y="75" as="geometry" />
+        </mxCell>
+        <mxCell id="5" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;whiteSpace=wrap;fillColor=#FFFFFF;" value=":NotificationService" vertex="1">
+          <mxGeometry height="42" width="192" x="309" y="81" as="geometry" />
+        </mxCell>
+        <mxCell id="6" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;whiteSpace=wrap;fillColor=#FFFFFF;" value=":DeviceOperatingSystem" vertex="1">
+          <mxGeometry height="42" width="192" x="614" y="81" as="geometry" />
+        </mxCell>
+        <mxCell id="7" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;whiteSpace=wrap;fillColor=#FFFFFF;" value=":NotificationSettings" vertex="1">
+          <mxGeometry height="42" width="192" x="914" y="81" as="geometry" />
+        </mxCell>
+        <mxCell id="8" edge="1" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=none;dashed=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="95" y="152" as="sourcePoint" />
+            <mxPoint x="95" y="1275" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="9" edge="1" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=none;dashed=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="405" y="123" as="sourcePoint" />
+            <mxPoint x="405" y="1275" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="10" edge="1" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=none;dashed=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="710" y="123" as="sourcePoint" />
+            <mxPoint x="710" y="1275" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="11" edge="1" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=none;dashed=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1010" y="123" as="sourcePoint" />
+            <mxPoint x="1010" y="1275" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;whiteSpace=wrap;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="415" width="14" x="398" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="14" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;whiteSpace=wrap;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="42" width="14" x="703" y="248" as="geometry" />
+        </mxCell>
+        <mxCell id="15" edge="1" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=open;endFill=0;" value="startPermissionCheck()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="95" y="210" as="sourcePoint" />
+            <mxPoint x="398" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="16" edge="1" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=block;endFill=1;" value="getPermissionStatus()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="412" y="248" as="sourcePoint" />
+            <mxPoint x="703" y="248" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="17" edge="1" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;" value="currentStatus">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="703" y="290" as="sourcePoint" />
+            <mxPoint x="412" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="18" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;shape=umlFrame;whiteSpace=wrap;fillColor=none;align=center;width=70;height=25;" value="break" vertex="1">
+          <mxGeometry height="150" width="1070" x="43" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="19" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;text;align=left;verticalAlign=middle;whiteSpace=wrap;fillColor=none;strokeColor=none;fontSize=13;" value="[currentStatus is granted or denied]" vertex="1">
+          <mxGeometry height="22" width="980" x="123" y="323" as="geometry" />
+        </mxCell>
+        <mxCell id="20" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;whiteSpace=wrap;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="45" width="14" x="1003" y="389" as="geometry" />
+        </mxCell>
+        <mxCell id="21" edge="1" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=block;endFill=1;" value="recordPermissionStatus(currentStatus)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="412" y="389" as="sourcePoint" />
+            <mxPoint x="1003" y="389" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="22" edge="1" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;" value="statusRecorded">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1003" y="434" as="sourcePoint" />
+            <mxPoint x="412" y="434" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="24" edge="1" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=open;endFill=0;" value="explainNotificationUse()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="398" y="528" as="sourcePoint" />
+            <mxPoint x="95" y="528" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="25" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;whiteSpace=wrap;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="165" width="14" x="703" y="625" as="geometry" />
+        </mxCell>
+        <mxCell id="26" edge="1" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=open;endFill=0;" value="requestNotificationPermission()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="412" y="625" as="sourcePoint" />
+            <mxPoint x="703" y="625" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="27" edge="1" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=open;endFill=0;" value="showPermissionPrompt()">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="703" y="685" as="sourcePoint" />
+            <mxPoint x="95" y="685" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="28" edge="1" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=open;endFill=0;" value="respond(allow / deny / dismiss)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="95" y="740" as="sourcePoint" />
+            <mxPoint x="703" y="740" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="29" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;whiteSpace=wrap;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="425" width="14" x="398" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="30" edge="1" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=open;endFill=0;" value="permissionResult(result)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="703" y="790" as="sourcePoint" />
+            <mxPoint x="412" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="31" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;shape=umlFrame;whiteSpace=wrap;fillColor=none;align=center;width=70;height=25;" value="alt" vertex="1">
+          <mxGeometry height="415" width="1070" x="43" y="825" as="geometry" />
+        </mxCell>
+        <mxCell id="32" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;text;align=left;verticalAlign=middle;whiteSpace=wrap;fillColor=none;strokeColor=none;fontSize=13;" value="[result is granted, denied, or dismissed]" vertex="1">
+          <mxGeometry height="22" width="980" x="123" y="828" as="geometry" />
+        </mxCell>
+        <mxCell id="33" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;whiteSpace=wrap;fillColor=#FFFFFF;" value="" vertex="1">
+          <mxGeometry height="55" width="14" x="1003" y="905" as="geometry" />
+        </mxCell>
+        <mxCell id="34" edge="1" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=block;endFill=1;" value="recordPermissionStatus(status)">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="412" y="905" as="sourcePoint" />
+            <mxPoint x="1003" y="905" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="35" edge="1" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=open;endFill=0;dashed=1;" value="statusRecorded">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1003" y="960" as="sourcePoint" />
+            <mxPoint x="412" y="960" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="37" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;text;align=left;verticalAlign=middle;whiteSpace=wrap;fillColor=none;strokeColor=none;fontSize=13;" value="Denied or dismissed: keep notifications blocked." vertex="1">
+          <mxGeometry height="38" width="278" x="110" y="1008" as="geometry" />
+        </mxCell>
+        <mxCell id="39" edge="1" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=none;dashed=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="43" y="1060" as="sourcePoint" />
+            <mxPoint x="1113" y="1060" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="40" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;text;align=left;verticalAlign=middle;whiteSpace=wrap;fillColor=none;strokeColor=none;fontSize=13;" value="[permission result cannot be read]" vertex="1">
+          <mxGeometry height="24" width="490" x="123" y="1072" as="geometry" />
+        </mxCell>
+        <mxCell id="41" edge="1" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;rounded=0;labelBackgroundColor=#FFFFFF;verticalAlign=bottom;endArrow=block;endFill=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="459" y="1146" />
+              <mxPoint x="459" y="1177" />
+            </Array>
+            <mxPoint x="412" y="1146" as="sourcePoint" />
+            <mxPoint x="412" y="1177" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="42" parent="1" style="html=1;strokeColor=#000000;fontColor=#000000;fontFamily=Arial;fontSize=13;text;align=left;verticalAlign=middle;whiteSpace=wrap;fillColor=none;strokeColor=none;fontSize=13;" value="blockNotificationsUntilConfirmed()" vertex="1">
+          <mxGeometry height="24" width="500" x="468" y="1140" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,841 @@
+<mxfile host="app.diagrams.net" pages="6">
+  <diagram name="Account" id="Account">
+    <mxGraphModel dx="2290" dy="1460" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2440" pageHeight="1020" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="VerificationLink" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="VerificationLink" vertex="1">
+          <mxGeometry height="300" width="580" x="100" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="VerificationLinkattrs" parent="VerificationLink" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="− token : String&#xa;− userId : String&#xa;− expiresAt : DateTime&#xa;− used : Boolean" vertex="1">
+          <mxGeometry height="100" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="VerificationLinkops" parent="VerificationLink" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ createLink(account : Account) : void&#xa;+ invalidatePreviousLink(account : Account) : void&#xa;+ findByToken(token : String) : VerificationLink [0..1]&#xa;+ getUserId() : String&#xa;+ isUsed() : Boolean&#xa;+ isExpired() : Boolean&#xa;+ markUsed() : Boolean" vertex="1">
+          <mxGeometry height="160" width="580" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Account" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="Account" vertex="1">
+          <mxGeometry height="300" width="580" x="900" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Accountattrs" parent="Account" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="− userId : String&#xa;− email : String&#xa;− passwordHash : String&#xa;− accountStatus : String" vertex="1">
+          <mxGeometry height="100" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Accountops" parent="Account" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ findByEmail(email : String) : Account [0..1]&#xa;+ findById(userId : String) : Account [0..1]&#xa;+ createAccount(email : String, password : String) : void&#xa;+ markEmailVerified() : Boolean&#xa;+ verifyPassword(password : String) : Boolean&#xa;+ checkAccountStatus() : String&#xa;+ updatePassword(password : String) : Boolean" vertex="1">
+          <mxGeometry height="160" width="580" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="PasswordResetLink" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="PasswordResetLink" vertex="1">
+          <mxGeometry height="280" width="580" x="1700" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="PasswordResetLinkattrs" parent="PasswordResetLink" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="− token : String&#xa;− account : Account&#xa;− expiresAt : DateTime&#xa;− used : Boolean" vertex="1">
+          <mxGeometry height="100" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PasswordResetLinkops" parent="PasswordResetLink" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ createLink(account : Account, validity : Duration = 1 hour) : void&#xa;+ invalidatePreviousLink(account : Account) : void&#xa;+ isRecognizedAndCurrent(token : String) : Boolean&#xa;+ isUsed(token : String) : Boolean&#xa;+ isExpired(token : String) : Boolean&#xa;+ markUsed(token : String) : Boolean" vertex="1">
+          <mxGeometry height="140" width="580" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="Session" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="Session" vertex="1">
+          <mxGeometry height="160" width="580" x="900" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="Sessionattrs" parent="Session" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="− account : Account" vertex="1">
+          <mxGeometry height="40" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Sessionops" parent="Session" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ createSession(account : Account) : void&#xa;+ endCurrentSession() : Boolean&#xa;+ endAllSessions() : Boolean" vertex="1">
+          <mxGeometry height="80" width="580" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="AuthenticationService" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="AuthenticationService" vertex="1">
+          <mxGeometry height="280" width="580" x="1700" y="580" as="geometry" />
+        </mxCell>
+        <mxCell id="AuthenticationServiceops" parent="AuthenticationService" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ register(email : String, password : String, confirmation : String) :void&#xa;− validateInput() : Boolean&#xa;+ openVerificationLink(token : String) : void&#xa;+ requestResend(email : String) : void&#xa;+ login(email : String, password : String) : void&#xa;+ logOut() : void&#xa;+ logOutOfAllDevices() : void&#xa;+ sendPasswordResetEmail(email : String) : void&#xa;+ openResetLink(token : String) : void&#xa;+ submitNewPassword(password : String, confirmation : String) : void&#xa;− validateNewPassword(password : String, confirmation : String) : Boolean" vertex="1">
+          <mxGeometry height="240" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rel0" edge="1" parent="1" source="Account" style="edgeStyle=none;html=0;rounded=0;jumpStyle=arc;jumpSize=8;strokeWidth=1.4;labelBackgroundColor=#ffffff;fontFamily=Arial;fontSize=12;endArrow=none;exitX=0.06896551724137931;exitY=1.0;exitPerimeter=0;entryX=0.06896551724137931;entryY=0.0;entryPerimeter=0;" target="Session" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel0-source" connectable="0" parent="rel0" style="edgeLabel;html=0;align=center;verticalAlign=middle;fontSize=13;fontFamily=Arial;fontColor=#202c35;labelBackgroundColor=#ffffff;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7125" as="geometry">
+            <mxPoint x="15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel0-target" connectable="0" parent="rel0" style="edgeLabel;html=0;align=center;verticalAlign=middle;fontSize=13;fontFamily=Arial;fontColor=#202c35;labelBackgroundColor=#ffffff;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="0.7125" as="geometry">
+            <mxPoint x="15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel1" edge="1" parent="1" style="edgeStyle=none;html=0;rounded=0;jumpStyle=arc;jumpSize=8;strokeWidth=1.4;labelBackgroundColor=#ffffff;fontFamily=Arial;fontSize=12;endArrow=none;exitX=0.0;exitY=0.13333333333333333;exitPerimeter=0;entryX=1.0;entryY=0.13333333333333333;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="900" y="199" as="sourcePoint" />
+            <mxPoint x="680" y="199" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel1-source" connectable="0" parent="rel1" style="edgeLabel;html=0;align=center;verticalAlign=middle;fontSize=13;fontFamily=Arial;fontColor=#202c35;labelBackgroundColor=#ffffff;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7909090909090909" as="geometry">
+            <mxPoint y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel1-target" connectable="0" parent="rel1" style="edgeLabel;html=0;align=center;verticalAlign=middle;fontSize=13;fontFamily=Arial;fontColor=#202c35;labelBackgroundColor=#ffffff;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="0.7909090909090909" as="geometry">
+            <mxPoint y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel2" edge="1" parent="1" style="edgeStyle=none;html=0;rounded=0;jumpStyle=arc;jumpSize=8;strokeWidth=1.4;labelBackgroundColor=#ffffff;fontFamily=Arial;fontSize=12;endArrow=none;exitX=1.0;exitY=0.13333333333333333;exitPerimeter=0;entryX=0.0;entryY=0.14285714285714285;entryPerimeter=0;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1480" y="199" as="sourcePoint" />
+            <mxPoint x="1700" y="199" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel2-source" connectable="0" parent="rel2" style="edgeLabel;html=0;align=center;verticalAlign=middle;fontSize=13;fontFamily=Arial;fontColor=#202c35;labelBackgroundColor=#ffffff;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7909090909090909" as="geometry">
+            <mxPoint y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel2-target" connectable="0" parent="rel2" style="edgeLabel;html=0;align=center;verticalAlign=middle;fontSize=13;fontFamily=Arial;fontColor=#202c35;labelBackgroundColor=#ffffff;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="0.7909090909090909" as="geometry">
+            <mxPoint y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel3" edge="1" parent="1" source="AuthenticationService" style="edgeStyle=none;html=0;rounded=0;jumpStyle=arc;jumpSize=8;strokeWidth=1.4;labelBackgroundColor=#ffffff;fontFamily=Arial;fontSize=12;endArrow=none;dashed=1;endArrow=open;endFill=0;strokeColor=light-dark(#000000, #69757e);exitX=0.0;exitY=0.14285714285714285;exitPerimeter=0;entryX=1.0;entryY=0.8;entryPerimeter=0;" target="Account" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1520" y="620" />
+              <mxPoint x="1520" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel4" edge="1" parent="1" source="AuthenticationService" style="edgeStyle=none;html=0;rounded=0;jumpStyle=arc;jumpSize=8;strokeWidth=1.4;labelBackgroundColor=#ffffff;fontFamily=Arial;fontSize=12;endArrow=none;dashed=1;endArrow=open;endFill=0;strokeColor=light-dark(#000000, #69757e);exitX=0.0;exitY=0.2857142857142857;exitPerimeter=0;entryX=1.0;entryY=0.5;entryPerimeter=0;" target="Session" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel5" edge="1" parent="1" source="AuthenticationService" style="edgeStyle=none;html=0;rounded=0;jumpStyle=arc;jumpSize=8;strokeWidth=1.4;labelBackgroundColor=#ffffff;fontFamily=Arial;fontSize=12;endArrow=none;dashed=1;endArrow=open;endFill=0;strokeColor=light-dark(#000000, #69757e);exitX=0.0;exitY=0.7142857142857143;exitPerimeter=0;entryX=0.896551724137931;entryY=1.0;entryPerimeter=0;" target="VerificationLink" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="620" y="780" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel6" edge="1" parent="1" source="AuthenticationService" style="edgeStyle=none;html=0;rounded=0;jumpStyle=arc;jumpSize=8;strokeWidth=1.4;labelBackgroundColor=#ffffff;fontFamily=Arial;fontSize=12;endArrow=none;dashed=1;endArrow=open;endFill=0;strokeColor=light-dark(#000000, #69757e);exitX=0.06896551724137931;exitY=0.0;exitPerimeter=0;entryX=0.06896551724137931;entryY=1.0;entryPerimeter=0;" target="PasswordResetLink" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Profile" id="Profile">
+    <mxGraphModel dx="1553" dy="990" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1640" pageHeight="1000" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Profile" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="Profile" vertex="1">
+          <mxGeometry height="280" width="580" x="100" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Profileattrs" parent="Profile" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="− name : String&#xa;− memorizationLevel : MemorizationLevel&#xa;− sequencePreference : String&#xa;− startingPoint : Tuple&lt;Surah, Integer&gt; [0..1]" vertex="1">
+          <mxGeometry height="100" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Profileops" parent="Profile" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ createProfile(name : String, memorizedSurahs : Surah [0..114],&#xa;    sequencePreference : String, startingPoint : Tuple&lt;Surah, Integer&gt;&#xa;    [0..1]) : void&#xa;+ getName() : String&#xa;+ getMemorizationLevel() : MemorizationLevel&#xa;+ getSequencePreference() : String&#xa;+ getStartingPoint() : Tuple&lt;Surah, Integer&gt; [0..1]" vertex="1">
+          <mxGeometry height="140" width="580" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="MemorizationLevel" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="MemorizationLevel" vertex="1">
+          <mxGeometry height="140" width="580" x="900" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="MemorizationLevelattrs" parent="MemorizationLevel" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="− memorizedSurahs : Surah [0..114]" vertex="1">
+          <mxGeometry height="40" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MemorizationLevelops" parent="MemorizationLevel" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ getSelectedSurahs() : Surah [0..114]&#xa;+ setMemorizedSurahs(selectedSurahs : Surah [0..114]) : Boolean" vertex="1">
+          <mxGeometry height="60" width="580" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ProfileService" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="ProfileService" vertex="1">
+          <mxGeometry height="210" width="960" x="100" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="ProfileServiceops" parent="ProfileService" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ submitProfile() : void&#xa;− validateProfile(name : String, memorizedSurahs : Surah [0..114], sequencePreference : String, startingPoint : Tuple&lt;Surah, Integer&gt;[0..1]) : Boolean&#xa;+ confirmMemorizedSurahs(selectedSurahs : Surah [0..114]) : Surah [0..114]&#xa;+ selectSequencePreference(preference : String) : void&#xa;+ selectStartingPoint(memorizedSurahs : Surah [0..114], sequencePreference: String) : Tuple&lt;Surah, Integer&gt; [0..1]&#xa;− determineNextSurah(memorizedSurahs : Surah [0..114], sequencePreference: String) : Surah [0..1]&#xa;− validateVerse(verse : Verse, verseCount : Integer) : Boolean&#xa;+ selectViewProfile() : void" vertex="1">
+          <mxGeometry height="180" width="960" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="rel0" edge="1" parent="1" source="Profile" style="edgeStyle=none;html=0;rounded=0;jumpStyle=arc;jumpSize=8;strokeWidth=1.4;labelBackgroundColor=#ffffff;fontFamily=Arial;fontSize=12;endArrow=none;exitX=1.0;exitY=0.14285714285714285;exitPerimeter=0;entryX=0.0;entryY=0.2857142857142857;entryPerimeter=0;" target="MemorizationLevel" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel0-source" connectable="0" parent="rel0" style="edgeLabel;html=0;align=center;verticalAlign=middle;fontSize=13;fontFamily=Arial;fontColor=#202c35;labelBackgroundColor=#ffffff;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7909090909090909" as="geometry">
+            <mxPoint y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel0-target" connectable="0" parent="rel0" style="edgeLabel;html=0;align=center;verticalAlign=middle;fontSize=13;fontFamily=Arial;fontColor=#202c35;labelBackgroundColor=#ffffff;" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.7909090909090909" as="geometry">
+            <mxPoint y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel1" edge="1" parent="1" source="ProfileService" style="edgeStyle=none;html=0;rounded=0;jumpStyle=arc;jumpSize=8;strokeWidth=1.4;labelBackgroundColor=#ffffff;fontFamily=Arial;fontSize=12;endArrow=none;dashed=1;endArrow=open;endFill=0;strokeColor=light-dark(#000000, #69757e);exitX=0.041;exitY=-0.008;exitPerimeter=0;entryX=0.06896551724137931;entryY=1.0;entryPerimeter=0;exitDx=0;exitDy=0;curved=0;" target="Profile" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel2" edge="1" parent="1" source="ProfileService" style="edgeStyle=none;html=0;rounded=0;jumpStyle=arc;jumpSize=8;strokeWidth=1.4;labelBackgroundColor=#ffffff;fontFamily=Arial;fontSize=12;endArrow=none;dashed=1;endArrow=open;endFill=0;strokeColor=light-dark(#000000, #69757e);exitX=0.875;exitY=0.003;exitPerimeter=0;entryX=0.06896551724137931;entryY=1.0;entryPerimeter=0;exitDx=0;exitDy=0;" target="MemorizationLevel" value="">
+          <mxGeometry relative="1" x="-0.5326" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Learning" id="Learning">
+    <mxGraphModel dx="1665" dy="1062" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2440" pageHeight="2160" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Surah" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="Surah" vertex="1">
+          <mxGeometry height="360" width="580" x="100" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Surahattrs" parent="Surah" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="− surahNumber : Integer&#xa;− surahName : String&#xa;− pages : Integer [1..*]&#xa;− versesPerPage : Map&lt;Integer, Integer&gt;&#xa;− totalVerses : Integer" vertex="1">
+          <mxGeometry height="120" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Surahops" parent="Surah" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=13;connectable=0;" value="+ getAllSurahs() : Surah [114]&#xa;+ getVerseCount(determinedSurah : Surah) : Integer&#xa;+ getDetails(currentSurah : Surah) : Tuple&lt;Integer, String&gt;&#xa;+ getMultipleSurahDetails(completedSurahs : Surah [0..114]) : Map&lt;Surah,&#xa;    Tuple&lt;Integer, String&gt;&gt;&#xa;+ getPageLayoutAndVerseCount(surah : Surah) : Tuple&lt;Integer [1..*],&#xa;    Map&lt;Integer, Integer&gt;, Integer&gt;&#xa;+ getPageOf(savedVerse : Verse) : Integer&#xa;+ getFirstPage() : Integer&#xa;+ getNextPage() : Integer [0..1]&#xa;+ validateSelection(selectedSurahs : Surah [0..114]) : Boolean" vertex="1">
+          <mxGeometry height="200" width="580" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="Verse" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="Verse" vertex="1">
+          <mxGeometry height="180" width="580" x="900" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Verseattrs" parent="Verse" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="− orderedWords : Word [1..*] {ordered}" vertex="1">
+          <mxGeometry height="40" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Verseops" parent="Verse" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ getWords(scope : Verse [1..*]) : Word [1..*]&#xa;+ getCurrentVerse() : Verse&#xa;+ getPreviousVerse() : Verse [0..1]&#xa;+ getVersesOfPage(page : Integer) : Verse [1..*]" vertex="1">
+          <mxGeometry height="100" width="580" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Word" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="Word" vertex="1">
+          <mxGeometry height="220" width="580" x="1700" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Wordattrs" parent="Word" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="− visible : Boolean&#xa;− feedback : String [0..1]" vertex="1">
+          <mxGeometry height="60" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Wordops" parent="Word" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ setFeedback(result : String) : void&#xa;+ reveal() : void&#xa;+ restoreWordStates(initialStates : Map&lt;Word, Tuple&lt;Boolean, String&gt;&gt;) :&#xa;    void&#xa;+ isVisible(word : Word) : Boolean&#xa;+ concealWords(verses : Verse [1..*]) : void" vertex="1">
+          <mxGeometry height="120" width="580" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Lesson" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="Lesson" vertex="1">
+          <mxGeometry height="280" width="580" x="100" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="Lessonattrs" parent="Lesson" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="− surah : Surah&#xa;− status : String&#xa;− grade : Real&#xa;− content : Verse [1..*]" vertex="1">
+          <mxGeometry height="100" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Lessonops" parent="Lesson" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ getStatus() : String&#xa;+ getGrade() : Real&#xa;+ getContent() : Verse [1..*]&#xa;+ getReviewContent(lesson : Lesson) : Verse [1..*]&#xa;+ markCompleted(grade : Real) : Boolean&#xa;+ markNotCompleted(grade : Real) : Boolean" vertex="1">
+          <mxGeometry height="140" width="580" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="MemorizationExercise" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="MemorizationExercise" vertex="1">
+          <mxGeometry height="260" width="580" x="900" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="MemorizationExerciseattrs" parent="MemorizationExercise" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="− status : String&#xa;− exerciseDetails : Map&lt;String, Object&gt;&#xa;− displayConfiguration : Map&lt;Word, Tuple&lt;Boolean, String&gt;&gt;&#xa;− latestAttemptResults : Map&lt;Integer, Map&lt;Word, String&gt;&gt;" vertex="1">
+          <mxGeometry height="100" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MemorizationExerciseops" parent="MemorizationExercise" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ getExerciseDetails() : Map&lt;String, Object&gt;&#xa;+ getDisplayConfiguration() : Map&lt;Word, Tuple&lt;Boolean, String&gt;&gt;&#xa;+ getLatestAttemptResults(exercises : Integer [1..*]) : Map&lt;Integer,&#xa;    Map&lt;Word, String&gt;&gt;&#xa;+ markCompleted() : Boolean&#xa;+ markNotCompleted() : Boolean" vertex="1">
+          <mxGeometry height="120" width="580" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ReinforcementExercise" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="ReinforcementExercise" vertex="1">
+          <mxGeometry height="440" width="580" x="1700" y="640" as="geometry" />
+        </mxCell>
+        <mxCell id="ReinforcementExerciseattrs" parent="ReinforcementExercise" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="− surah : Surah&#xa;− exerciseType : String&#xa;− position : Integer&#xa;− wordResults : Map&lt;Word, String&gt;&#xa;− grade : Real&#xa;− completedVerses : Verse [0..*]" vertex="1">
+          <mxGeometry height="140" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ReinforcementExerciseops" parent="ReinforcementExercise" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ getSavedProgress() : Tuple&lt;Verse, Integer&gt; [0..1]&#xa;+ saveProgress() : Boolean&#xa;+ markFinished(grade : Real) : void&#xa;+ clearProgress() : void&#xa;+ getWordResults() : Map&lt;Word, String&gt;&#xa;+ saveHeardVerseAndPosition(verse : Verse, position : Integer) : Boolean&#xa;+ saveAttemptResults(wordResults : Map&lt;Word, String&gt;) : Boolean&#xa;+ saveSkippedVerseResults(promptVerse : Verse) : Boolean&#xa;+ allSurahVersesHeard(totalVerses : Integer) : Boolean&#xa;+ markVerseCompleted(verse : Verse) : Boolean&#xa;+ checkAllVersesCompleted() : Boolean&#xa;+ getTwoExercisesWithProgress(completedSurahs : Surah [0..114]) :&#xa;    Map&lt;Surah, Map&lt;String, Real&gt;&gt;" vertex="1">
+          <mxGeometry height="260" width="580" y="180" as="geometry" />
+        </mxCell>
+        <mxCell id="RoadmapService" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="RoadmapService" vertex="1">
+          <mxGeometry height="180" width="580" x="100" y="1050" as="geometry" />
+        </mxCell>
+        <mxCell id="RoadmapServiceops" parent="RoadmapService" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ openRoadmap(surah : Surah) : void&#xa;+ buildRoadmap(pages : Integer [1..*], versesPerPage : Map&lt;Integer,&#xa;    Integer&gt;, totalVerses : Integer) : void&#xa;+ checkInternetConnection() : Boolean&#xa;+ startOrContinue() : void&#xa;+ unlockNextLesson(lesson : Lesson) : Boolean&#xa;+ identifyNextSurahUsingPreference(lesson : Lesson) : Surah [0..1]" vertex="1">
+          <mxGeometry height="140" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MemorizationLessonService" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="MemorizationLessonService" vertex="1">
+          <mxGeometry height="240" width="580" x="900" y="1050" as="geometry" />
+        </mxCell>
+        <mxCell id="MemorizationLessonServiceops" parent="MemorizationLessonService" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ openLesson(lesson : Lesson) : void&#xa;+ restoreAndSelectCurrentExercise() : void&#xa;+ saveProgress() : Boolean&#xa;+ selectNextExercise() : void&#xa;− calculateLessonGrade(finalWordResults : Map&lt;Word, String&gt;) : Real&#xa;+ notifyPlaybackCompleted() : void&#xa;+ notifyPlaybackIncomplete() : void&#xa;+ submitRecitation(scope : Verse [1..*]) : void&#xa;+ markExerciseCompleted() : void" vertex="1">
+          <mxGeometry height="200" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ReinforcementExerciseService" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="ReinforcementExerciseService" vertex="1">
+          <mxGeometry height="400" width="580" x="1700" y="1240" as="geometry" />
+        </mxCell>
+        <mxCell id="ReinforcementExerciseServiceattrs" parent="ReinforcementExerciseService" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="− pausePlan : Map&lt;Verse, Verse&gt;" vertex="1">
+          <mxGeometry height="40" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ReinforcementExerciseServiceops" parent="ReinforcementExerciseService" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ openExercise(surah : Surah, exerciseType : String) : void&#xa;+ resumeFromSavedPosition() : void&#xa;+ startFromBeginning() : void&#xa;+ performExercise() : void&#xa;+ finishExercise() : void&#xa;− calculateGrade(wordResults : Map&lt;Word, String&gt;) : Real&#xa;+ restartExercise() : void&#xa;+ setPausePlan(pausePlan : Map&lt;Verse, Verse&gt;) : void&#xa;− selectPauseEndings(page : Integer) : Map&lt;Verse, Verse&gt;&#xa;+ skipVerse() : void&#xa;+ startRecitation() : void&#xa;+ submitAttempt() : void&#xa;+ reciteWords(audio : Byte [0..*]) : void&#xa;+ verseStarted(verse : Verse) : void&#xa;+ verseEnded(verse : Verse, position : Integer) : void" vertex="1">
+          <mxGeometry height="320" width="580" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="ReviewLessonService" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="ReviewLessonService" vertex="1">
+          <mxGeometry height="200" width="580" x="100" y="1480" as="geometry" />
+        </mxCell>
+        <mxCell id="ReviewLessonServiceops" parent="ReviewLessonService" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=13;connectable=0;" value="+ openReviewLesson(lesson : Lesson) : void&#xa;− determineReviewScope(contentSincePreviousReview : Verse [1..*]) : Verse&#xa;    [1..*]&#xa;+ initializeExercise(scope : Verse [1..*], initialStates : Map&lt;Word,&#xa;    Tuple&lt;Boolean, String&gt;&gt;) : void&#xa;+ startRecitation() : void&#xa;+ markExerciseCompleted() : void&#xa;+ submitAttempt() : void&#xa;− calculateGrade(wordResults : Map&lt;Word, String&gt;) : Real" vertex="1">
+          <mxGeometry height="160" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="SurahSelectionService" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="SurahSelectionService" vertex="1">
+          <mxGeometry height="120" width="580" x="900" y="1480" as="geometry" />
+        </mxCell>
+        <mxCell id="SurahSelectionServiceops" parent="SurahSelectionService" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ openMemorization() : void&#xa;+ selectSurah(surah : Surah, action : String) : void&#xa;+ openReinforcement() : void" vertex="1">
+          <mxGeometry height="80" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rel0" edge="1" parent="1" source="Surah" style="edgeStyle=none;rounded=0;html=0;jumpStyle=arc;labelBackgroundColor=#ffffff;fontSize=11;endArrow=none;startArrow=diamond;startFill=1;startSize=12;;exitX=1.0;exitY=0.1111111111111111;exitPerimeter=0;entryX=0.0;entryY=0.2222222222222222;entryPerimeter=0;" target="Verse" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel0-source" connectable="0" parent="rel0" style="edgeLabel;html=0;align=center;verticalAlign=middle;fontSize=13;fontFamily=Arial;fontColor=#202c35;labelBackgroundColor=#ffffff;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7363636363636363" as="geometry">
+            <mxPoint y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel0-target" connectable="0" parent="rel0" style="edgeLabel;html=0;align=center;verticalAlign=middle;fontSize=13;fontFamily=Arial;fontColor=#202c35;labelBackgroundColor=#ffffff;" value="1..*" vertex="1">
+          <mxGeometry relative="1" x="0.7909090909090909" as="geometry">
+            <mxPoint y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel1" edge="1" parent="1" source="Verse" style="edgeStyle=none;rounded=0;html=0;jumpStyle=arc;labelBackgroundColor=#ffffff;fontSize=11;endArrow=none;startArrow=diamond;startFill=1;startSize=12;;exitX=1.0;exitY=0.2222222222222222;exitPerimeter=0;entryX=0.0;entryY=0.18181818181818182;entryPerimeter=0;" target="Word" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel1-source" connectable="0" parent="rel1" style="edgeLabel;html=0;align=center;verticalAlign=middle;fontSize=13;fontFamily=Arial;fontColor=#202c35;labelBackgroundColor=#ffffff;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7363636363636363" as="geometry">
+            <mxPoint y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel1-target" connectable="0" parent="rel1" style="edgeLabel;html=0;align=center;verticalAlign=middle;fontSize=13;fontFamily=Arial;fontColor=#202c35;labelBackgroundColor=#ffffff;" value="1..*" vertex="1">
+          <mxGeometry relative="1" x="0.7909090909090909" as="geometry">
+            <mxPoint y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel2" edge="1" parent="1" source="Lesson" style="edgeStyle=none;rounded=0;html=0;jumpStyle=arc;labelBackgroundColor=#ffffff;fontSize=11;endArrow=none;;exitX=0.06896551724137931;exitY=0.0;exitPerimeter=0;entryX=0.06896551724137931;entryY=1.0;entryPerimeter=0;" target="Surah" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel2-source" connectable="0" parent="rel2" style="edgeLabel;html=0;align=center;verticalAlign=middle;fontSize=13;fontFamily=Arial;fontColor=#202c35;labelBackgroundColor=#ffffff;" value="4..*" vertex="1">
+          <mxGeometry relative="1" x="-0.7125" as="geometry">
+            <mxPoint x="15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel2-target" connectable="0" parent="rel2" style="edgeLabel;html=0;align=center;verticalAlign=middle;fontSize=13;fontFamily=Arial;fontColor=#202c35;labelBackgroundColor=#ffffff;" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.7125" as="geometry">
+            <mxPoint x="15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel3" edge="1" parent="1" source="Lesson" style="edgeStyle=none;rounded=0;html=0;jumpStyle=arc;labelBackgroundColor=#ffffff;fontSize=11;endArrow=none;;exitX=1.0;exitY=0.14285714285714285;exitPerimeter=0;entryX=0.0;entryY=0.15384615384615385;entryPerimeter=0;" target="MemorizationExercise" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel3-source" connectable="0" parent="rel3" style="edgeLabel;html=0;align=center;verticalAlign=middle;fontSize=13;fontFamily=Arial;fontColor=#202c35;labelBackgroundColor=#ffffff;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7909090909090909" as="geometry">
+            <mxPoint x="-13" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel3-target" connectable="0" parent="rel3" style="edgeLabel;html=0;align=center;verticalAlign=middle;fontSize=13;fontFamily=Arial;fontColor=#202c35;labelBackgroundColor=#ffffff;" value="5...8" vertex="1">
+          <mxGeometry relative="1" x="0.7909090909090909" as="geometry">
+            <mxPoint x="3" y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel4" edge="1" parent="1" source="ReinforcementExercise" style="edgeStyle=none;rounded=0;html=0;jumpStyle=arc;labelBackgroundColor=#ffffff;fontSize=11;endArrow=none;;exitX=0.06896551724137931;exitY=0.0;exitPerimeter=0;entryX=1.0;entryY=0.8888888888888888;entryPerimeter=0;" target="Surah" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1740" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel4-source" connectable="0" parent="rel4" style="edgeLabel;html=0;align=center;verticalAlign=middle;fontSize=13;fontFamily=Arial;fontColor=#202c35;labelBackgroundColor=#ffffff;" value="2" vertex="1">
+          <mxGeometry relative="1" x="-0.9634920634920635" as="geometry">
+            <mxPoint x="15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel4-target" connectable="0" parent="rel4" style="edgeLabel;html=0;align=center;verticalAlign=middle;fontSize=13;fontFamily=Arial;fontColor=#202c35;labelBackgroundColor=#ffffff;" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.9634920634920635" as="geometry">
+            <mxPoint y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel5" edge="1" parent="1" source="ReinforcementExercise" style="edgeStyle=none;rounded=0;html=0;jumpStyle=arc;labelBackgroundColor=#ffffff;fontSize=11;endArrow=none;;exitX=0.13793103448275862;exitY=0.0;exitPerimeter=0;entryX=0.896551724137931;entryY=1.0;entryPerimeter=0;" target="Verse" value="completedVerses">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1780" y="360" />
+              <mxPoint x="1420" y="360" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel5-source" connectable="0" parent="rel5" style="edgeLabel;html=0;align=center;verticalAlign=middle;fontSize=13;fontFamily=Arial;fontColor=#202c35;labelBackgroundColor=#ffffff;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="-0.9342857142857143" as="geometry">
+            <mxPoint x="15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel5-target" connectable="0" parent="rel5" style="edgeLabel;html=0;align=center;verticalAlign=middle;fontSize=13;fontFamily=Arial;fontColor=#202c35;labelBackgroundColor=#ffffff;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="0.9342857142857143" as="geometry">
+            <mxPoint x="15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel6" edge="1" parent="1" source="MemorizationLessonService" style="edgeStyle=none;rounded=0;html=0;jumpStyle=arc;labelBackgroundColor=#ffffff;fontSize=11;endArrow=none;dashed=1;endArrow=open;endFill=0;;exitX=0.0;exitY=0.16666666666666666;exitPerimeter=0;entryX=1.0;entryY=0.8571428571428571;entryPerimeter=0;" target="Lesson" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="1090" />
+              <mxPoint x="720" y="880" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel7" edge="1" parent="1" source="MemorizationLessonService" style="edgeStyle=none;rounded=0;html=0;jumpStyle=arc;labelBackgroundColor=#ffffff;fontSize=11;endArrow=none;dashed=1;endArrow=open;endFill=0;;exitX=0.06896551724137931;exitY=0.0;exitPerimeter=0;entryX=0.06896551724137931;entryY=1.0;entryPerimeter=0;" target="MemorizationExercise" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel8" edge="1" parent="1" source="MemorizationLessonService" style="edgeStyle=none;rounded=0;html=0;jumpStyle=arc;labelBackgroundColor=#ffffff;fontSize=11;endArrow=none;dashed=1;endArrow=open;endFill=0;;exitX=1.0;exitY=0.16666666666666666;exitPerimeter=0;entryX=1.0;entryY=0.6666666666666666;entryPerimeter=0;" target="Verse" value="">
+          <mxGeometry relative="1" x="-0.3702" as="geometry">
+            <Array as="points">
+              <mxPoint x="1520" y="1090" />
+              <mxPoint x="1520" y="240" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel9" edge="1" parent="1" source="MemorizationLessonService" style="edgeStyle=none;rounded=0;html=0;jumpStyle=arc;labelBackgroundColor=#ffffff;fontSize=11;endArrow=none;dashed=1;endArrow=open;endFill=0;;exitX=0.0;exitY=0.3333333333333333;exitPerimeter=0;entryX=1.0;entryY=0.4444444444444444;entryPerimeter=0;" target="RoadmapService" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel10" edge="1" parent="1" source="ReviewLessonService" style="edgeStyle=none;rounded=0;html=0;jumpStyle=arc;labelBackgroundColor=#ffffff;fontSize=11;endArrow=none;dashed=1;endArrow=open;endFill=0;;exitX=0.0;exitY=0.2;exitPerimeter=0;entryX=0.0;entryY=0.8571428571428571;entryPerimeter=0;" target="Lesson" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="60" y="1520" />
+              <mxPoint x="60" y="880" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel11" edge="1" parent="1" source="ReviewLessonService" style="edgeStyle=none;rounded=0;html=0;jumpStyle=arc;labelBackgroundColor=#ffffff;fontSize=11;endArrow=none;dashed=1;endArrow=open;endFill=0;;exitX=0.06896551724137931;exitY=0.0;exitPerimeter=0;entryX=0.06896551724137931;entryY=1.0;entryPerimeter=0;" target="RoadmapService" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel12" edge="1" parent="1" source="RoadmapService" style="edgeStyle=none;rounded=0;html=0;jumpStyle=arc;labelBackgroundColor=#ffffff;fontSize=11;endArrow=none;dashed=1;endArrow=open;endFill=0;;exitX=0.06896551724137931;exitY=0.0;exitPerimeter=0;entryX=0.06896551724137931;entryY=1.0;entryPerimeter=0;" target="Lesson" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel13" edge="1" parent="1" source="RoadmapService" style="edgeStyle=none;rounded=0;html=0;jumpStyle=arc;labelBackgroundColor=#ffffff;fontSize=11;endArrow=none;dashed=1;endArrow=open;endFill=0;;exitX=0.0;exitY=0.2222222222222222;exitPerimeter=0;entryX=0.0;entryY=0.8888888888888888;entryPerimeter=0;" target="Surah" value="">
+          <mxGeometry relative="1" x="-0.4266" as="geometry">
+            <Array as="points">
+              <mxPoint x="40" y="1090" />
+              <mxPoint x="40" y="440" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel14" edge="1" parent="1" source="SurahSelectionService" style="edgeStyle=none;rounded=0;html=0;jumpStyle=arc;labelBackgroundColor=#ffffff;fontSize=11;endArrow=none;dashed=1;endArrow=open;endFill=0;;exitX=0.0;exitY=0.3333333333333333;exitPerimeter=0;entryX=0.896551724137931;entryY=1.0;entryPerimeter=0;" target="Surah" value="">
+          <mxGeometry relative="1" x="-0.3763" as="geometry">
+            <Array as="points">
+              <mxPoint x="700" y="1520" />
+              <mxPoint x="700" y="520" />
+              <mxPoint x="620" y="520" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel15" edge="1" parent="1" source="SurahSelectionService" style="edgeStyle=none;rounded=0;html=0;jumpStyle=arc;labelBackgroundColor=#ffffff;fontSize=11;endArrow=none;dashed=1;endArrow=open;endFill=0;;exitX=1.0;exitY=0.3333333333333333;exitPerimeter=0;entryX=0.0;entryY=0.9090909090909091;entryPerimeter=0;" target="ReinforcementExercise" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1640" y="1520" />
+              <mxPoint x="1640" y="1040" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel16" edge="1" parent="1" source="ReinforcementExerciseService" style="edgeStyle=none;rounded=0;html=0;jumpStyle=arc;labelBackgroundColor=#ffffff;fontSize=11;endArrow=none;dashed=1;endArrow=open;endFill=0;;exitX=0.06896551724137931;exitY=0.0;exitPerimeter=0;entryX=0.06896551724137931;entryY=1.0;entryPerimeter=0;" target="ReinforcementExercise" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel17" edge="1" parent="1" source="ReinforcementExerciseService" style="edgeStyle=none;rounded=0;html=0;jumpStyle=arc;labelBackgroundColor=#ffffff;fontSize=11;endArrow=none;dashed=1;endArrow=open;endFill=0;;exitX=0.0;exitY=0.2;exitPerimeter=0;entryX=1.0;entryY=0.7777777777777778;entryPerimeter=0;" target="Surah" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1500" y="1320" />
+              <mxPoint x="1500" y="400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel18" edge="1" parent="1" source="ReinforcementExerciseService" style="edgeStyle=none;rounded=0;html=0;jumpStyle=arc;labelBackgroundColor=#ffffff;fontSize=11;endArrow=none;dashed=1;endArrow=open;endFill=0;;exitX=0.0;exitY=0.1;exitPerimeter=0;entryX=1.0;entryY=0.4444444444444444;entryPerimeter=0;" target="Verse" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1540" y="1280" />
+              <mxPoint x="1540" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel19" edge="1" parent="1" source="ReinforcementExerciseService" style="edgeStyle=none;rounded=0;html=0;jumpStyle=arc;labelBackgroundColor=#ffffff;fontSize=11;endArrow=none;dashed=1;endArrow=open;endFill=0;;exitX=1.0;exitY=0.1;exitPerimeter=0;entryX=1.0;entryY=0.7272727272727273;entryPerimeter=0;" target="Word" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2320" y="1280" />
+              <mxPoint x="2320" y="280" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel20" edge="1" parent="1" source="MemorizationExercise" style="edgeStyle=none;rounded=0;html=0;jumpStyle=arc;labelBackgroundColor=#ffffff;fontSize=11;endArrow=none;dashed=1;endArrow=open;endFill=0;;exitX=0.06896551724137931;exitY=0.0;exitPerimeter=0;entryX=0.06896551724137931;entryY=1.0;entryPerimeter=0;" target="Verse" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Progress" id="Progress">
+    <mxGraphModel dx="3664" dy="2336" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2440" pageHeight="2180" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="SurahProgress" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="SurahProgress" vertex="1">
+          <mxGeometry height="360" width="580" x="100" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="SurahProgressattrs" parent="SurahProgress" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="− currentMemorizationSurah : Surah [0..1]&#xa;− currentReinforcementSurah : Surah [0..1]&#xa;− progressBySurah : Map&lt;Surah, Real&gt;" vertex="1">
+          <mxGeometry height="80" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="SurahProgressops" parent="SurahProgress" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ initializeMemorizationProgress(memorizedSurahs : Surah [0..114],&#xa;    startingPoint : Tuple&lt;Surah, Integer&gt; [0..1]) : Boolean&#xa;+ setCurrentMemorizationSurah(surah : Surah [0..1]) : Boolean&#xa;+ getCurrentMemorizationSurah() : Surah [0..1]&#xa;+ getSurahProgress(currentSurah : Surah) : Real&#xa;+ getProgressForAllSurahs() : Map&lt;Surah, Tuple&lt;Real, String&gt;&gt;&#xa;+ getCurrentReinforcementSurah() : Surah [0..1]&#xa;+ getCompletedMemorizationSurahs() : Surah [0..114]&#xa;+ getReinforcementProgress(completedSurahs : Surah [0..114]) : Map&lt;Surah,&#xa;    Real&gt;&#xa;+ setCurrentReinforcementSurah(surah : Surah) : Boolean&#xa;+ getOverallSurahProgress() : Real" vertex="1">
+          <mxGeometry height="240" width="580" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ActiveStreak" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="ActiveStreak" vertex="1">
+          <mxGeometry height="240" width="580" x="900" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="ActiveStreakattrs" parent="ActiveStreak" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="− currentStreak : Integer&#xa;− longestStreak : Integer&#xa;− lastActivityDate : Date" vertex="1">
+          <mxGeometry height="80" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ActiveStreakops" parent="ActiveStreak" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ getActiveStreak() : ActiveStreak&#xa;+ incrementStreak(activityType : String, activityDate : Date) : void&#xa;+ updateLongestStreak() : void&#xa;+ getLastActivityDate() : Date&#xa;+ resetStreak() : void" vertex="1">
+          <mxGeometry height="120" width="580" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="MistakeRecord" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="MistakeRecord" vertex="1">
+          <mxGeometry height="260" width="580" x="1700" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="MistakeRecordattrs" parent="MistakeRecord" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="− surah : Surah&#xa;− verse : Verse&#xa;− word : Word [0..1]&#xa;− date : Date&#xa;− exerciseType : String" vertex="1">
+          <mxGeometry height="120" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="MistakeRecordops" parent="MistakeRecord" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ create(surah : Surah, verse : Verse, word : Word [0..1], date : Date,&#xa;    exerciseType : String) : void&#xa;+ getMistakeCount() : Integer&#xa;+ getAllMistakeRecords() : MistakeRecord [0..*]" vertex="1">
+          <mxGeometry height="100" width="580" y="160" as="geometry" />
+        </mxCell>
+        <mxCell id="ProgressDashboardService" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="ProgressDashboardService" vertex="1">
+          <mxGeometry height="120" width="580" x="900" y="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="ProgressDashboardServiceops" parent="ProgressDashboardService" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ viewProgressDashboard() : void&#xa;+ openMistakesHistory() : void&#xa;− calculateOverallProgress() : Real" vertex="1">
+          <mxGeometry height="80" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LearningSchedule" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="LearningSchedule" vertex="1">
+          <mxGeometry height="300" width="580" x="100" y="1340" as="geometry" />
+        </mxCell>
+        <mxCell id="LearningScheduleattrs" parent="LearningSchedule" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="− id : String&#xa;− days : String [1..7]&#xa;− preferredTimes : Map&lt;String, Time&gt;&#xa;− dailyTarget : Integer" vertex="1">
+          <mxGeometry height="100" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="LearningScheduleops" parent="LearningSchedule" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ createLearningSchedule() : void&#xa;+ save() : LearningSchedule&#xa;+ getFullScheduleDetails() : Tuple&lt;String [1..7], Map&lt;String, Time&gt;,&#xa;    Integer&gt;&#xa;+ saveChangesFromToday(days : String [1..7], preferredTimes : Map&lt;String,&#xa;    Time&gt;, dailyTarget : Integer) : LearningSchedule&#xa;+ getSchedule() : LearningSchedule [0..1]&#xa;+ getScheduledDaysAndTimes(scheduleId : String) : Map&lt;String, Time&gt;" vertex="1">
+          <mxGeometry height="160" width="580" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="DailyProgress" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="DailyProgress" vertex="1">
+          <mxGeometry height="240" width="580" x="900" y="1340" as="geometry" />
+        </mxCell>
+        <mxCell id="DailyProgressattrs" parent="DailyProgress" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="− notificationShown : Boolean&#xa;− day : Date&#xa;− completed : Boolean" vertex="1">
+          <mxGeometry height="80" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="DailyProgressops" parent="DailyProgress" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ isNotificationShown() : Boolean&#xa;+ markNotificationShown() : void&#xa;+ markDayCompleted() : void&#xa;+ getWeeklyProgress() : Map&lt;Date, String&gt;&#xa;+ getWeeklyProgress(previousWeek : Date) : Map&lt;Date, String&gt;" vertex="1">
+          <mxGeometry height="120" width="580" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="ScheduledDay" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="ScheduledDay" vertex="1">
+          <mxGeometry height="200" width="580" x="1700" y="1340" as="geometry" />
+        </mxCell>
+        <mxCell id="ScheduledDayattrs" parent="ScheduledDay" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="− schedule : LearningSchedule&#xa;− day : String&#xa;− preferredTime : Time&#xa;− dailyTarget : Integer" vertex="1">
+          <mxGeometry height="100" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ScheduledDayops" parent="ScheduledDay" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ createScheduledDay(schedule : LearningSchedule, day : String,&#xa;    preferredTime : Time, dailyTarget : Integer) : void" vertex="1">
+          <mxGeometry height="60" width="580" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="ScheduleService" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="ScheduleService" vertex="1">
+          <mxGeometry height="220" width="580" x="900" y="1800" as="geometry" />
+        </mxCell>
+        <mxCell id="ScheduleServiceops" parent="ScheduleService" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ createSchedule(days : String [1..7], preferredTimes : Map&lt;String, Time&gt;,&#xa;    dailyTarget : Integer) : void&#xa;− validateSchedule(days : String [1..7], preferredTimes : Map&lt;String,&#xa;    Time&gt;, dailyTarget : Integer) : Boolean&#xa;+ submitEdit(days : String [1..7], preferredTimes : Map&lt;String, Time&gt;,&#xa;    dailyTarget : Integer, action : String) : void&#xa;+ dailyTargetReached() : void&#xa;+ checkTargetCompletion() : void" vertex="1">
+          <mxGeometry height="180" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="ScheduleProgressService" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="ScheduleProgressService" vertex="1">
+          <mxGeometry height="120" width="580" x="100" y="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="ScheduleProgressServiceops" parent="ScheduleProgressService" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ viewScheduleProgress() : void&#xa;− determineDayStatuses() : Map&lt;Date, String&gt;&#xa;+ selectPreviousWeek() : void" vertex="1">
+          <mxGeometry height="80" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="StreakService" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="StreakService" vertex="1">
+          <mxGeometry height="120" width="580" x="1700" y="1060" as="geometry" />
+        </mxCell>
+        <mxCell id="StreakServiceops" parent="StreakService" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ recordActivity(activityType : String) : void&#xa;− validateActivityType() : Boolean&#xa;+ evaluateDayEnd(timezone : String) : void" vertex="1">
+          <mxGeometry height="80" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="CompletionNotification" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="CompletionNotification" vertex="1">
+          <mxGeometry height="80" width="580" x="1700" y="1800" as="geometry" />
+        </mxCell>
+        <mxCell id="CompletionNotificationops" parent="CompletionNotification" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ createNotification() : void" vertex="1">
+          <mxGeometry height="40" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rel0" edge="1" parent="1" source="LearningSchedule" style="edgeStyle=none;rounded=0;html=0;jumpStyle=arc;labelBackgroundColor=#ffffff;fontSize=11;endArrow=none;startArrow=diamond;startFill=1;startSize=12;;exitX=0.896551724137931;exitY=0.0;exitPerimeter=0;entryX=0.06896551724137931;entryY=0.0;entryPerimeter=0;" target="ScheduledDay" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="620" y="1300" />
+              <mxPoint x="1740" y="1300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel0-source" connectable="0" parent="rel0" style="edgeLabel;html=0;align=center;verticalAlign=middle;fontSize=13;fontFamily=Arial;fontColor=#202c35;labelBackgroundColor=#ffffff;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.9516666666666667" as="geometry">
+            <mxPoint x="15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel0-target" connectable="0" parent="rel0" style="edgeLabel;html=0;align=center;verticalAlign=middle;fontSize=13;fontFamily=Arial;fontColor=#202c35;labelBackgroundColor=#ffffff;" value="1..7" vertex="1">
+          <mxGeometry relative="1" x="0.9616666666666667" as="geometry">
+            <mxPoint x="15" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel1" edge="1" parent="1" source="ProgressDashboardService" style="edgeStyle=none;rounded=0;html=0;jumpStyle=arc;labelBackgroundColor=#ffffff;fontSize=11;endArrow=none;dashed=1;endArrow=open;endFill=0;;exitX=1.0;exitY=0.3333333333333333;exitPerimeter=0;entryX=0.0;entryY=0.7692307692307693;entryPerimeter=0;" target="MistakeRecord" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1660" y="1100" />
+              <mxPoint x="1660" y="740" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel2" edge="1" parent="1" source="ProgressDashboardService" style="edgeStyle=none;rounded=0;html=0;jumpStyle=arc;labelBackgroundColor=#ffffff;fontSize=11;endArrow=none;dashed=1;endArrow=open;endFill=0;;exitX=0.06896551724137931;exitY=0.0;exitPerimeter=0;entryX=0.06896551724137931;entryY=1.0;entryPerimeter=0;" target="ActiveStreak" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel3" edge="1" parent="1" source="ProgressDashboardService" style="edgeStyle=none;rounded=0;html=0;jumpStyle=arc;labelBackgroundColor=#ffffff;fontSize=11;endArrow=none;dashed=1;endArrow=open;endFill=0;;exitX=0.0;exitY=0.3333333333333333;exitPerimeter=0;entryX=1.0;entryY=0.8888888888888888;entryPerimeter=0;" target="SurahProgress" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="720" y="1100" />
+              <mxPoint x="720" y="860" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel4" edge="1" parent="1" source="StreakService" style="edgeStyle=none;rounded=0;html=0;jumpStyle=arc;labelBackgroundColor=#ffffff;fontSize=11;endArrow=none;dashed=1;endArrow=open;endFill=0;;exitX=0.06896551724137931;exitY=0.0;exitPerimeter=0;entryX=0.896551724137931;entryY=1.0;entryPerimeter=0;" target="ActiveStreak" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1740" y="820" />
+              <mxPoint x="1420" y="820" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel5" edge="1" parent="1" source="ScheduleProgressService" style="edgeStyle=none;rounded=0;html=0;jumpStyle=arc;labelBackgroundColor=#ffffff;fontSize=11;endArrow=none;dashed=1;endArrow=open;endFill=0;;exitX=0.06896551724137931;exitY=1.0;exitPerimeter=0;entryX=0.06896551724137931;entryY=0.0;entryPerimeter=0;" target="LearningSchedule" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel6" edge="1" parent="1" source="ScheduleProgressService" style="edgeStyle=none;rounded=0;html=0;jumpStyle=arc;labelBackgroundColor=#ffffff;fontSize=11;endArrow=none;dashed=1;endArrow=open;endFill=0;;exitX=1.0;exitY=0.6666666666666666;exitPerimeter=0;entryX=0.0;entryY=0.16666666666666666;entryPerimeter=0;" target="DailyProgress" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="860" y="1140" />
+              <mxPoint x="860" y="1380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel7" edge="1" parent="1" source="ScheduleService" style="edgeStyle=none;rounded=0;html=0;jumpStyle=arc;labelBackgroundColor=#ffffff;fontSize=11;endArrow=none;dashed=1;endArrow=open;endFill=0;;exitX=0.0;exitY=0.18181818181818182;exitPerimeter=0;entryX=0.896551724137931;entryY=1.0;entryPerimeter=0;" target="LearningSchedule" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="620" y="1840" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel8" edge="1" parent="1" source="ScheduleService" style="edgeStyle=none;rounded=0;html=0;jumpStyle=arc;labelBackgroundColor=#ffffff;fontSize=11;endArrow=none;dashed=1;endArrow=open;endFill=0;;exitX=1.0;exitY=0.18181818181818182;exitPerimeter=0;entryX=0.0;entryY=0.8;entryPerimeter=0;" target="ScheduledDay" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1660" y="1840" />
+              <mxPoint x="1660" y="1500" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rel9" edge="1" parent="1" source="ScheduleService" style="edgeStyle=none;rounded=0;html=0;jumpStyle=arc;labelBackgroundColor=#ffffff;fontSize=11;endArrow=none;dashed=1;endArrow=open;endFill=0;;exitX=0.06896551724137931;exitY=0.0;exitPerimeter=0;entryX=0.06896551724137931;entryY=1.0;entryPerimeter=0;" target="DailyProgress" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel10" edge="1" parent="1" source="ScheduleService" style="edgeStyle=none;rounded=0;html=0;jumpStyle=arc;labelBackgroundColor=#ffffff;fontSize=11;endArrow=none;dashed=1;endArrow=open;endFill=0;;exitX=1.0;exitY=0.5454545454545454;exitPerimeter=0;entryX=0.06896551724137931;entryY=1.0;entryPerimeter=0;" target="CompletionNotification" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1740" y="1920" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Profile" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="Profile::Profile" vertex="1">
+          <mxGeometry height="280" width="580" x="900" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Profileattrs" parent="Profile" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="− name : String&#xa;− memorizationLevel : MemorizationLevel&#xa;− sequencePreference : String&#xa;− startingPoint : Tuple&lt;Surah, Integer&gt; [0..1]" vertex="1">
+          <mxGeometry height="100" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Profileops" parent="Profile" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ createProfile(name : String, memorizedSurahs : Surah [0..114],&#xa;    sequencePreference : String, startingPoint : Tuple&lt;Surah, Integer&gt;&#xa;    [0..1]) : void&#xa;+ getName() : String&#xa;+ getMemorizationLevel() : MemorizationLevel&#xa;+ getSequencePreference() : String&#xa;+ getStartingPoint() : Tuple&lt;Surah, Integer&gt; [0..1]" vertex="1">
+          <mxGeometry height="140" width="580" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="profile-surah-progress" edge="1" parent="1" source="Profile" style="edgeStyle=none;rounded=0;html=0;strokeColor=#000000;strokeWidth=1.2;jumpStyle=arc;endArrow=none;exitX=0.1896551724137931;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" target="SurahProgress" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1010" y="450" />
+              <mxPoint x="390" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="profile-surah-progress-source" connectable="0" parent="profile-surah-progress" style="edgeLabel;html=0;align=center;verticalAlign=middle;fontSize=13;fontFamily=Arial;labelBackgroundColor=#ffffff;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.941025641025641" as="geometry">
+            <mxPoint x="18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="profile-surah-progress-target" connectable="0" parent="profile-surah-progress" style="edgeLabel;html=0;align=center;verticalAlign=middle;fontSize=13;fontFamily=Arial;labelBackgroundColor=#ffffff;" value="1" vertex="1">
+          <mxGeometry relative="1" x="0.941025641025641" as="geometry">
+            <mxPoint x="18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="profile-active-streak" edge="1" parent="1" source="Profile" style="edgeStyle=none;rounded=0;html=0;strokeColor=#000000;strokeWidth=1.2;jumpStyle=arc;endArrow=none;exitX=0.5;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" target="ActiveStreak" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="profile-active-streak-source" connectable="0" parent="profile-active-streak" style="edgeLabel;html=0;align=center;verticalAlign=middle;fontSize=13;fontFamily=Arial;labelBackgroundColor=#ffffff;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.7125" as="geometry">
+            <mxPoint x="18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="profile-active-streak-target" connectable="0" parent="profile-active-streak" style="edgeLabel;html=0;align=center;verticalAlign=middle;fontSize=13;fontFamily=Arial;labelBackgroundColor=#ffffff;" value="0..1" vertex="1">
+          <mxGeometry relative="1" x="0.7125" as="geometry">
+            <mxPoint x="18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="profile-mistakes" edge="1" parent="1" source="Profile" style="edgeStyle=none;rounded=0;html=0;strokeColor=#000000;strokeWidth=1.2;jumpStyle=arc;endArrow=none;exitX=0.8103448275862069;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" target="MistakeRecord" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1370" y="450" />
+              <mxPoint x="1990" y="450" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="profile-mistakes-source" connectable="0" parent="profile-mistakes" style="edgeLabel;html=0;align=center;verticalAlign=middle;fontSize=13;fontFamily=Arial;labelBackgroundColor=#ffffff;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.941025641025641" as="geometry">
+            <mxPoint x="18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="profile-mistakes-target" connectable="0" parent="profile-mistakes" style="edgeLabel;html=0;align=center;verticalAlign=middle;fontSize=13;fontFamily=Arial;labelBackgroundColor=#ffffff;" value="0..*" vertex="1">
+          <mxGeometry relative="1" x="0.941025641025641" as="geometry">
+            <mxPoint x="18" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="profile-schedule" edge="1" parent="1" source="Profile" style="edgeStyle=none;rounded=0;html=0;strokeColor=#000000;strokeWidth=1.2;jumpStyle=arc;endArrow=none;exitX=0.0;exitY=0.42857142857142855;exitPerimeter=0;entryX=0.0;entryY=0.4;entryPerimeter=0;" target="LearningSchedule" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="40" y="220" />
+              <mxPoint x="40" y="1460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="profile-schedule-source" connectable="0" parent="profile-schedule" style="edgeLabel;html=0;align=center;verticalAlign=middle;fontSize=13;fontFamily=Arial;labelBackgroundColor=#ffffff;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.9787037037037037" as="geometry">
+            <mxPoint y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="profile-schedule-target" connectable="0" parent="profile-schedule" style="edgeLabel;html=0;align=center;verticalAlign=middle;fontSize=13;fontFamily=Arial;labelBackgroundColor=#ffffff;" value="0..1" vertex="1">
+          <mxGeometry relative="1" x="0.9787037037037037" as="geometry">
+            <mxPoint y="-13" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Recitation" id="Recitation-Evaluation">
+    <mxGraphModel dx="1949" dy="1243" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2440" pageHeight="1190" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="RecitationService" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="RecitationService" vertex="1">
+          <mxGeometry height="240" width="580" x="100" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="RecitationServiceattrs" parent="RecitationService" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="− scope : Verse [1..*]&#xa;− initialStates : Map&lt;Word, Tuple&lt;Boolean, String&gt;&gt;&#xa;− restartAllowed : Boolean" vertex="1">
+          <mxGeometry height="80" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="RecitationServiceops" parent="RecitationService" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ startRecording(scope : Verse [1..*], initialStates : Map&lt;Word,&#xa;    Tuple&lt;Boolean, String&gt;&gt;, restartAllowed : Boolean) : Map&lt;Word, String&gt;&#xa;+ recordRecitation(audioInput : Byte [0..*]) : void&#xa;− evaluateWord(recitedWord : String, expectedWord : Word) : String&#xa;+ restart() : void&#xa;+ stopRecording() : void" vertex="1">
+          <mxGeometry height="120" width="580" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="RecitationAttempt" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="RecitationAttempt" vertex="1">
+          <mxGeometry height="200" width="580" x="100" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="RecitationAttemptattrs" parent="RecitationAttempt" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="− wordResults : Map&lt;Word, String&gt;" vertex="1">
+          <mxGeometry height="40" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="RecitationAttemptops" parent="RecitationAttempt" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ createAttempt() : void&#xa;+ addWordResult(word : Word, result : String) : void&#xa;+ discardAttempt() : void&#xa;+ isComplete() : Boolean&#xa;+ getWordResults() : Map&lt;Word, String&gt;" vertex="1">
+          <mxGeometry height="120" width="580" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="PlaybackService" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="PlaybackService" vertex="1">
+          <mxGeometry height="240" width="580" x="1700" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="PlaybackServiceattrs" parent="PlaybackService" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="− initialStates : Map&lt;Word, Tuple&lt;Boolean, String&gt;&gt;" vertex="1">
+          <mxGeometry height="40" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="PlaybackServiceops" parent="PlaybackService" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=13;connectable=0;" value="+ startPlayback(scope : Verse [1..*], initialStates : Map&lt;Word,&#xa;    Tuple&lt;Boolean, String&gt;&gt;) : void&#xa;+ playAudio(audio : Byte [0..*]) : void&#xa;+ checkPlaybackCompletion() : Boolean&#xa;+ stopPlayback() : void&#xa;+ startOrResumePage(surah : Surah, page : Integer, position : Integer,&#xa;    pausePlan : Map&lt;Verse, Verse&gt;) : void&#xa;+ pauseAtEnding(verse : Verse) : void&#xa;+ resumeFrom(stoppingPoint : Integer) : void" vertex="1">
+          <mxGeometry height="160" width="580" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Verse" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="Learning::Verse" vertex="1">
+          <mxGeometry height="180" width="580" x="900" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="Verseattrs" parent="Verse" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="− orderedWords : Word [1..*] {ordered}" vertex="1">
+          <mxGeometry height="40" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Verseops" parent="Verse" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ getWords(scope : Verse [1..*]) : Word [1..*]&#xa;+ getCurrentVerse() : Verse&#xa;+ getPreviousVerse() : Verse [0..1]&#xa;+ getVersesOfPage(page : Integer) : Verse [1..*]" vertex="1">
+          <mxGeometry height="100" width="580" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="Word" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="Learning::Word" vertex="1">
+          <mxGeometry height="220" width="580" x="900" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="Wordattrs" parent="Word" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="− visible : Boolean&#xa;− feedback : String [0..1]" vertex="1">
+          <mxGeometry height="60" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="Wordops" parent="Word" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ setFeedback(result : String) : void&#xa;+ reveal() : void&#xa;+ restoreWordStates(initialStates : Map&lt;Word, Tuple&lt;Boolean, String&gt;&gt;) :&#xa;    void&#xa;+ isVisible(word : Word) : Boolean&#xa;+ concealWords(verses : Verse [1..*]) : void" vertex="1">
+          <mxGeometry height="120" width="580" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="recitation-attempt" edge="1" parent="1" source="RecitationService" style="edgeStyle=none;rounded=0;html=0;strokeWidth=1.2;jumpStyle=arc;endArrow=none;dashed=1;endArrow=open;endFill=0;exitX=0.5;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" target="RecitationAttempt" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="recitation-verse" edge="1" parent="1" source="RecitationService" style="edgeStyle=none;rounded=0;html=0;strokeWidth=1.2;jumpStyle=arc;endArrow=none;dashed=1;endArrow=open;endFill=0;exitX=1.0;exitY=0.20833333333333334;exitPerimeter=0;entryX=0.0;entryY=0.5;entryPerimeter=0;" target="Verse" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="790" y="490" />
+              <mxPoint x="790" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="recitation-word" edge="1" parent="1" source="RecitationService" style="edgeStyle=none;rounded=0;html=0;strokeWidth=1.2;jumpStyle=arc;endArrow=none;dashed=1;endArrow=open;endFill=0;exitX=1.0;exitY=0.7083333333333334;exitPerimeter=0;entryX=0.0;entryY=0.36363636363636365;entryPerimeter=0;" target="Word" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="790" y="610" />
+              <mxPoint x="790" y="920" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="playback-verse" edge="1" parent="1" source="PlaybackService" style="edgeStyle=none;rounded=0;html=0;strokeWidth=1.2;jumpStyle=arc;endArrow=none;dashed=1;endArrow=open;endFill=0;exitX=0.0;exitY=0.20833333333333334;exitPerimeter=0;entryX=1.0;entryY=0.5;entryPerimeter=0;" target="Verse" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1590" y="490" />
+              <mxPoint x="1590" y="210" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="playback-word" edge="1" parent="1" source="PlaybackService" style="edgeStyle=none;rounded=0;html=0;strokeWidth=1.2;jumpStyle=arc;endArrow=none;dashed=1;endArrow=open;endFill=0;exitX=0.0;exitY=0.7083333333333334;exitPerimeter=0;entryX=1.0;entryY=0.36363636363636365;entryPerimeter=0;" target="Word" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1590" y="610" />
+              <mxPoint x="1590" y="920" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="verse-word" edge="1" parent="1" source="Verse" style="edgeStyle=none;rounded=0;html=0;strokeWidth=1.2;jumpStyle=arc;endArrow=none;startArrow=diamond;startFill=1;startSize=12;exitX=0.5;exitY=1.0;exitPerimeter=0;entryX=0.5;entryY=0.0;entryPerimeter=0;" target="Word" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="verse-word-source" connectable="0" parent="verse-word" style="edgeLabel;html=0;align=center;verticalAlign=middle;fontSize=13;fontFamily=Arial;labelBackgroundColor=#ffffff;" value="1" vertex="1">
+          <mxGeometry relative="1" x="-0.8925925925925926" as="geometry">
+            <mxPoint x="23" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="verse-word-target" connectable="0" parent="verse-word" style="edgeLabel;html=0;align=center;verticalAlign=middle;fontSize=13;fontFamily=Arial;labelBackgroundColor=#ffffff;" value="1..*" vertex="1">
+          <mxGeometry relative="1" x="0.9148148148148149" as="geometry">
+            <mxPoint x="23" as="offset" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram name="Settings" id="Mobile-App">
+    <mxGraphModel dx="1431" dy="913" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1640" pageHeight="820" background="#ffffff" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NotificationSettings" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="NotificationSettings" vertex="1">
+          <mxGeometry height="240" width="580" x="100" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="NotificationSettingsattrs" parent="NotificationSettings" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="− optionState : Map&lt;String, Boolean&gt;&#xa;− permissionStatus : String" vertex="1">
+          <mxGeometry height="60" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NotificationSettingsops" parent="NotificationSettings" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ getMotivationalSettings() : Tuple&lt;Boolean, String&gt;&#xa;+ isLearningRemindersOn() : Boolean&#xa;+ getNotificationSettings() : Map&lt;String, Boolean&gt;&#xa;+ saveOption(type : String, state : Boolean) : Boolean&#xa;+ recordPermissionStatus(status : String) : Boolean&#xa;+ keepPreviousState() : void" vertex="1">
+          <mxGeometry height="140" width="580" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="NotificationService" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="NotificationService" vertex="1">
+          <mxGeometry height="260" width="580" x="900" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="NotificationServiceops" parent="NotificationService" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=13;connectable=0;" value="+ changeOption(type : String, state : Boolean) : void&#xa;+ startPermissionCheck() : void&#xa;+ permissionResult(result : String) : void&#xa;+ scheduleMotivationalNotifications() : void&#xa;+ scheduleLearningReminders(scheduleId : String, changeType : String) :&#xa;    Boolean&#xa;− buildLearningRemindersForEachTime(scheduledDaysAndTimes : Map&lt;String,&#xa;    Time&gt;) : Map&lt;String, Time&gt;&#xa;+ blockNotificationsUntilConfirmed() : void&#xa;+ updateNotifications(type : String, state : Boolean) : void&#xa;+ schedulingResult(result : Boolean) : void&#xa;+ openNotificationSettings() : void" vertex="1">
+          <mxGeometry height="220" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AppSettings" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="AppSettings" vertex="1">
+          <mxGeometry height="140" width="580" x="100" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="AppSettingsattrs" parent="AppSettings" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="− theme : String" vertex="1">
+          <mxGeometry height="40" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="AppSettingsops" parent="AppSettings" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ getCurrentTheme() : String&#xa;+ saveTheme(theme : String) : Boolean" vertex="1">
+          <mxGeometry height="60" width="580" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="SettingsService" parent="1" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;verticalAlign=top;spacingTop=9;fontStyle=1;fontSize=16;" value="SettingsService" vertex="1">
+          <mxGeometry height="120" width="580" x="900" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="SettingsServiceops" parent="SettingsService" style="html=0;whiteSpace=wrap;rounded=0;fontFamily=Arial;align=left;verticalAlign=top;spacingLeft=9;spacingTop=4;fontSize=14;connectable=0;" value="+ selectTheme(theme : String) : void&#xa;+ openNotificationSettings() : void&#xa;+ changeOption(type : String, state : Boolean) : void" vertex="1">
+          <mxGeometry height="80" width="580" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="rel0" edge="1" parent="1" source="NotificationService" style="edgeStyle=none;html=0;rounded=0;jumpStyle=arc;jumpSize=8;strokeWidth=1.4;labelBackgroundColor=#ffffff;fontFamily=Arial;fontSize=12;endArrow=none;dashed=1;endArrow=open;endFill=0;exitX=0.002;exitY=0.16;exitPerimeter=0;entryX=1.0;entryY=0.16666666666666666;entryPerimeter=0;exitDx=0;exitDy=0;" target="NotificationSettings" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel1" edge="1" parent="1" source="SettingsService" style="edgeStyle=none;html=0;rounded=0;jumpStyle=arc;jumpSize=8;strokeWidth=1.4;labelBackgroundColor=#ffffff;fontFamily=Arial;fontSize=12;endArrow=none;dashed=1;endArrow=open;endFill=0;exitX=0;exitY=0.333;exitPerimeter=0;entryX=1.0;entryY=0.2857142857142857;entryPerimeter=0;exitDx=0;exitDy=0;" target="AppSettings" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="settings-to-notifications" edge="1" parent="1" source="SettingsService" style="edgeStyle=none;rounded=0;html=0;strokeWidth=1.2;jumpStyle=arc;endArrow=none;dashed=1;endArrow=open;endFill=0;exitX=0.5;exitY=0.0;exitPerimeter=0;entryX=0.5;entryY=1.0;entryPerimeter=0;" target="NotificationService" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
